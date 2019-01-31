@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1603,6 +1603,7 @@
 <part name="P_MM3&gt;" library="pinhead" deviceset="PINHD-2X10" device=""/>
 <part name="P_MM2&gt;" library="pinhead" deviceset="PINHD-2X10" device=""/>
 <part name="&lt;P_MM1" library="pinhead" deviceset="PINHD-2X10" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1623,6 +1624,7 @@
 <instance part="P_MM3&gt;" gate="A" x="172.72" y="58.42"/>
 <instance part="P_MM2&gt;" gate="A" x="172.72" y="93.98"/>
 <instance part="&lt;P_MM1" gate="A" x="172.72" y="129.54"/>
+<instance part="JP2" gate="G$1" x="101.6" y="170.18" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -1637,6 +1639,11 @@
 <pinref part="&lt;P_MM1" gate="A" pin="3"/>
 <wire x1="170.18" y1="137.16" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
 <label x="149.86" y="137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="P_MM2&gt;" gate="A" pin="6"/>
+<wire x1="177.8" y1="99.06" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
+<label x="185.42" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FPGA_42" class="0">
@@ -1813,11 +1820,6 @@
 <label x="53.34" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="P3" gate="A" pin="25"/>
-<wire x1="38.1" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
-<label x="20.32" y="55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="P3" gate="A" pin="26"/>
 <wire x1="45.72" y1="55.88" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
 <label x="53.34" y="55.88" size="1.778" layer="95"/>
@@ -1926,6 +1928,11 @@
 <wire x1="134.62" y1="45.72" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="SA_D2" gate="A" pin="7"/>
 <label x="114.3" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="170.18" x2="124.46" y2="170.18" width="0.1524" layer="91"/>
+<label x="111.76" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FPGA_VCC" class="0">
@@ -2125,6 +2132,11 @@
 <pinref part="P_MM2&gt;" gate="A" pin="3"/>
 <label x="149.86" y="101.6" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="P_MM2&gt;" gate="A" pin="12"/>
+<wire x1="177.8" y1="91.44" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
+<label x="185.42" y="91.44" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FPGA_75" class="0">
 <segment>
@@ -2155,11 +2167,6 @@
 <pinref part="P2" gate="A" pin="9"/>
 <wire x1="38.1" y1="119.38" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
 <label x="20.32" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="P_MM2&gt;" gate="A" pin="9"/>
-<wire x1="170.18" y1="93.98" x2="147.32" y2="93.98" width="0.1524" layer="91"/>
-<label x="149.86" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FPGA_87" class="0">
@@ -2276,22 +2283,12 @@
 <wire x1="45.72" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
 <label x="53.34" y="124.46" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="177.8" y1="99.06" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="P_MM2&gt;" gate="A" pin="6"/>
-<label x="185.42" y="99.06" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="FPGA_80" class="0">
 <segment>
 <pinref part="P2" gate="A" pin="8"/>
 <wire x1="45.72" y1="121.92" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
 <label x="53.34" y="121.92" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="P_MM2&gt;" gate="A" pin="8"/>
-<wire x1="177.8" y1="96.52" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
-<label x="185.42" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FPGA_86" class="0">
@@ -2313,9 +2310,9 @@
 <label x="53.34" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="P_MM2&gt;" gate="A" pin="12"/>
-<wire x1="177.8" y1="91.44" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
-<label x="185.42" y="91.44" size="1.778" layer="95"/>
+<pinref part="P_MM2&gt;" gate="A" pin="8"/>
+<wire x1="177.8" y1="96.52" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
+<label x="185.42" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FPGA_90" class="0">
@@ -2400,6 +2397,11 @@
 <pinref part="P3" gate="A" pin="3"/>
 <wire x1="38.1" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
 <label x="20.32" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="P_MM2&gt;" gate="A" pin="9"/>
+<wire x1="170.18" y1="93.98" x2="147.32" y2="93.98" width="0.1524" layer="91"/>
+<label x="149.86" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FPGA_114" class="0">
@@ -2910,6 +2912,11 @@
 <wire x1="78.74" y1="43.18" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
 <label x="86.36" y="43.18" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="172.72" x2="124.46" y2="172.72" width="0.1524" layer="91"/>
+<label x="111.76" y="172.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RST" class="0">
 <segment>
@@ -2977,6 +2984,13 @@
 <label x="114.3" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="FPGA_144" class="0">
+<segment>
+<pinref part="P3" gate="A" pin="25"/>
+<wire x1="38.1" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
+<label x="20.32" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -2990,8 +3004,12 @@
 <approved hash="106,1,38.1,38.1,FPGA_7,,,,,"/>
 <approved hash="106,1,38.1,35.56,FPGA_9,,,,,"/>
 <approved hash="106,1,38.1,30.48,FPGA_17,,,,,"/>
+<approved hash="106,1,45.72,124.46,FPGA_76,,,,,"/>
+<approved hash="106,1,45.72,121.92,FPGA_80,,,,,"/>
+<approved hash="106,1,38.1,119.38,FPGA_81,,,,,"/>
 <approved hash="106,1,45.72,63.5,FPGA_137,,,,,"/>
 <approved hash="106,1,38.1,60.96,FPGA_139,,,,,"/>
+<approved hash="106,1,38.1,55.88,FPGA_144,,,,,"/>
 <approved hash="106,1,78.74,53.34,NC,,,,,"/>
 <approved hash="106,1,78.74,48.26,RST,,,,,"/>
 <approved hash="113,1,41.8677,28.0712,P4,,,,,"/>
@@ -3008,6 +3026,7 @@
 <approved hash="113,1,173.948,58.5512,P_MM3&gt;,,,,,"/>
 <approved hash="113,1,173.948,94.1112,P_MM2&gt;,,,,,"/>
 <approved hash="113,1,173.948,129.671,&lt;P_MM1,,,,,"/>
+<approved hash="113,1,103.903,172.851,JP2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
