@@ -1,0 +1,338 @@
+Netlist
+
+Exported from MAIN_MODULE.sch at 11/01/2016 21:49
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Net      Part     Pad      Pin        Sheet
+
+AD0      SA_A     1        1          1
+
+AD1      SA_A     2        2          1
+
+AD2      SA_A     3        3          1
+
+AD3      SA_A     4        4          1
+
+AD4      SA_A     5        5          1
+         SA_D2    9        9          1
+
+AD5      SA_A     6        6          1
+         SA_D2    10       10         1
+
+AREF     SA_D2    8        8          1
+
+FPGA_1V2 P4       19       19         1
+         P4       20       20         1
+
+FPGA_3   P4       3        3          1
+
+FPGA_4   P4       4        4          1
+         P_MM4    6        6          1
+
+FPGA_7   P4       5        5          1
+
+FPGA_8   P4       6        6          1
+         P_MM4    7        7          1
+
+FPGA_9   P4       7        7          1
+
+FPGA_17  P4       11       11         1
+
+FPGA_18  P4       12       12         1
+         P_MM4    8        8          1
+
+FPGA_21  P4       14       14         1
+         P_MM4    10       10         1
+
+FPGA_22  P4       13       13         1
+         P_MM4    9        9          1
+
+FPGA_24  P4       16       16         1
+         P_MM4    12       12         1
+
+FPGA_25  P4       15       15         1
+         P_MM4    11       11         1
+
+FPGA_26  P4       18       18         1
+         P_MM4    14       14         1
+
+FPGA_27  P4       17       17         1
+         P_MM4    13       13         1
+
+FPGA_28  P4       22       22         1
+         P_MM4    16       16         1
+
+FPGA_30  P4       21       21         1
+         P_MM4    15       15         1
+
+FPGA_31  P4       24       24         1
+         P_MM4    18       18         1
+
+FPGA_32  P4       23       23         1
+         P_MM4    17       17         1
+
+FPGA_40  P1       1        1          1
+         P_MM1    3        3          1
+
+FPGA_41  P1       2        2          1
+         P_MM1    4        4          1
+
+FPGA_42  P1       3        3          1
+         P_MM1    5        5          1
+
+FPGA_43  P1       4        4          1
+         P_MM1    6        6          1
+
+FPGA_44  P1       5        5          1
+         P_MM1    7        7          1
+
+FPGA_45  P1       6        6          1
+         P_MM1    8        8          1
+
+FPGA_47  P1       7        7          1
+         P_MM1    9        9          1
+
+FPGA_48  P1       8        8          1
+         P_MM1    10       10         1
+
+FPGA_51  P1       9        9          1
+         P_MM1    11       11         1
+
+FPGA_52  P1       10       10         1
+         P_MM1    12       12         1
+
+FPGA_53  P1       11       11         1
+         P_MM1    13       13         1
+
+FPGA_55  P1       12       12         1
+         P_MM1    14       14         1
+
+FPGA_57  P1       13       13         1
+         P_MM1    15       15         1
+
+FPGA_58  P1       14       14         1
+         P_MM1    16       16         1
+
+FPGA_59  P1       15       15         1
+         P_MM1    17       17         1
+
+FPGA_60  P1       16       16         1
+         P_MM1    18       18         1
+
+FPGA_63  P1       17       17         1
+         SA_D1    1        1          1
+
+FPGA_64  P1       18       18         1
+         SA_D1    2        2          1
+
+FPGA_65  P1       19       19         1
+         SA_D1    3        3          1
+
+FPGA_67  P1       20       20         1
+         SA_D1    4        4          1
+
+FPGA_69  P1       21       21         1
+         SA_D1    5        5          1
+
+FPGA_70  P1       22       22         1
+         SA_D1    6        6          1
+
+FPGA_71  P1       23       23         1
+         SA_D1    7        7          1
+
+FPGA_72  P1       24       24         1
+         SA_D1    8        8          1
+
+FPGA_73  P2       3        3          1
+         P_MM2    3        3          1
+
+FPGA_74  P2       4        4          1
+         P_MM2    4        4          1
+
+FPGA_75  P2       5        5          1
+         P_MM2    5        5          1
+
+FPGA_76  P2       6        6          1
+         P_MM2    6        6          1
+
+FPGA_79  P2       7        7          1
+         P_MM2    7        7          1
+
+FPGA_80  P2       8        8          1
+         P_MM2    8        8          1
+
+FPGA_81  P2       9        9          1
+         P_MM2    9        9          1
+
+FPGA_86  P2       10       10         1
+         P_MM2    10       10         1
+
+FPGA_87  P2       11       11         1
+         P_MM2    11       11         1
+
+FPGA_88  P2       12       12         1
+         P_MM2    12       12         1
+
+FPGA_89  P2       13       13         1
+         P_MM2    13       13         1
+
+FPGA_90  P2       14       14         1
+         P_MM2    14       14         1
+
+FPGA_91  P2       15       15         1
+         P_MM2    15       15         1
+
+FPGA_92  P2       16       16         1
+         P_MM2    16       16         1
+
+FPGA_93  P2       17       17         1
+         P_MM2    17       17         1
+
+FPGA_94  P2       18       18         1
+         P_MM2    18       18         1
+
+FPGA_96  P2       19       19         1
+         SA_D2    1        1          1
+
+FPGA_97  P2       20       20         1
+         SA_D2    2        2          1
+
+FPGA_99  P2       21       21         1
+         SA_D2    3        3          1
+
+FPGA_100 P2       22       22         1
+         SA_D2    4        4          1
+
+FPGA_101 P2       23       23         1
+         SA_D2    5        5          1
+
+FPGA_103 BT_COM   4        4          1
+         P2       24       24         1
+
+FPGA_104 BT_COM   3        3          1
+         P2       25       25         1
+
+FPGA_112 P3       3        3          1
+         P_MM3    3        3          1
+
+FPGA_113 P3       4        4          1
+         P_MM3    4        4          1
+
+FPGA_114 P3       5        5          1
+         P_MM3    5        5          1
+
+FPGA_115 P3       6        6          1
+         P_MM3    6        6          1
+
+FPGA_118 P3       7        7          1
+         P_MM3    7        7          1
+
+FPGA_119 P3       8        8          1
+         P_MM3    8        8          1
+
+FPGA_120 P3       9        9          1
+         P_MM3    9        9          1
+
+FPGA_121 P3       10       10         1
+         P_MM3    10       10         1
+
+FPGA_122 P3       11       11         1
+         P_MM3    11       11         1
+
+FPGA_125 P3       12       12         1
+         P_MM3    12       12         1
+
+FPGA_126 P3       13       13         1
+         P_MM3    13       13         1
+
+FPGA_129 P3       14       14         1
+         P_MM3    14       14         1
+
+FPGA_132 P3       15       15         1
+         P_MM3    15       15         1
+
+FPGA_133 P3       16       16         1
+         P_MM3    16       16         1
+
+FPGA_134 P3       17       17         1
+         P_MM3    17       17         1
+
+FPGA_135 P3       18       18         1
+         P_MM3    18       18         1
+
+FPGA_136 P3       19       19         1
+         SA_D2    6        6          1
+
+FPGA_137 P3       20       20         1
+
+FPGA_139 P3       21       21         1
+
+FPGA_141 P3       22       22         1
+         P_MM4    3        3          1
+
+FPGA_142 P3       23       23         1
+         P_MM4    4        4          1
+
+FPGA_143 P3       24       24         1
+         P_MM4    5        5          1
+
+FPGA_GND BT_COM   2        2          1
+         JP1      2        2          1
+         P1       25       25         1
+         P1       26       26         1
+         P2       1        1          1
+         P2       2        2          1
+         P2       26       26         1
+         P2       27       27         1
+         P3       1        1          1
+         P3       2        2          1
+         P3       25       25         1
+         P3       26       26         1
+         P3       27       27         1
+         P4       1        1          1
+         P4       10       10         1
+         P4       2        2          1
+         P4       25       25         1
+         P4       26       26         1
+         P4       8        8          1
+         P4       9        9          1
+         P_MM1    1        1          1
+         P_MM1    20       20         1
+         P_MM2    1        1          1
+         P_MM2    20       20         1
+         P_MM3    1        1          1
+         P_MM3    20       20         1
+         P_MM4    1        1          1
+         P_MM4    20       20         1
+         SA_D2    7        7          1
+         SA_P     6        6          1
+         SA_P     7        7          1
+
+FPGA_VCC BT_COM   1        1          1
+         P1       27       27         1
+         P1       28       28         1
+         P2       28       28         1
+         P3       28       28         1
+         P4       27       27         1
+         P4       28       28         1
+         SA_P     4        4          1
+
+NC       SA_P     1        1          1
+
+RST      SA_P     3        3          1
+
+VCC      SA_P     2        2          1
+         SA_P     5        5          1
+
+VIN      JP1      1        1          1
+         P_MM1    19       19         1
+         P_MM1    2        2          1
+         P_MM2    19       19         1
+         P_MM2    2        2          1
+         P_MM3    19       19         1
+         P_MM3    2        2          1
+         P_MM4    19       19         1
+         P_MM4    2        2          1
+         SA_P     8        8          1
+
