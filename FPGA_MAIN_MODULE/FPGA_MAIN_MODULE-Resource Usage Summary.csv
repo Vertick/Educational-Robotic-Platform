@@ -1,0 +1,39 @@
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+Analysis & Synthesis Resource Usage Summary
+
+Resource,Usage
+Estimated Total logic elements,"3,035"
+,
+Total combinational functions,2801
+Logic element usage by number of LUT inputs,
+    -- 4 input functions,1199
+    -- 3 input functions,225
+    -- <=2 input functions,1377
+,
+Logic elements by mode,
+    -- normal mode,2466
+    -- arithmetic mode,335
+,
+Total registers,2026
+    -- Dedicated logic registers,2026
+    -- I/O registers,0
+,
+I/O pins,86
+Embedded Multiplier 9-bit elements,0
+Maximum fan-out node,CLK_50MHZ
+Maximum fan-out,2026
+Total fan-out,13828
+Average fan-out,2.81
