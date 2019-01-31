@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : J:/Dropbox/EAGLE/MAIN_MODULE/MAIN_MODULE.brd
+Job           : C:/Users/pedro/Dropbox/EAGLE/MAIN_MODULE/MAIN_MODULE.brd
 
-Start at      : 22:29:28 (18/09/2017)
-End at        : 22:30:17 (18/09/2017)
-Elapsed time  : 00:00:40
+Start at      : 21:51:31 (23/04/2018)
+End at        : 21:52:37 (23/04/2018)
+Elapsed time  : 00:00:57
 
-Signals       :   101   RoutingGrid: 6.25 mil  Layers: 2
-Connections   :   131   predefined:  0 ( 0 Vias )
+Signals       :   124   RoutingGrid: 6 mil  Layers: 2
+Connections   :   118   predefined:  0 ( 0 Vias )
 
-Router memory :   1562000
+Router memory :   1651556
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
 
-Time per pass     :  00:00:00  00:00:18  00:00:06  00:00:05  00:00:05  00:00:06
-Number of Ripups  :         0        67         0         0         0         0
-max. Level        :         0         3         0         0         0         0
-max. Total        :         0        31         0         0         0         0
+Time per pass     :  00:00:10  00:00:05  00:00:05  00:00:03  00:00:04  00:00:03  00:00:04  00:00:03  00:00:03  00:00:04  00:00:03  00:00:03  00:00:04  00:00:03
+Number of Ripups  :         0         4         0         0         0         0         0         0         0         0         0         0         0         0
+max. Level        :         0         1         0         0         0         0         0         0         0         0         0         0         0         0
+max. Total        :         0        28         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :         5       131       131       131       131       131
-Vias              :         0       302       175       138       114       108
-Resolution        :     3.8 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :        50       118       118       118       118       118       118       118       118       118       118       118       118       118
+Vias              :         0        69       100        81        71        69        69        68        63        53        51        49        49        49
+Resolution        :    42.4 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished
