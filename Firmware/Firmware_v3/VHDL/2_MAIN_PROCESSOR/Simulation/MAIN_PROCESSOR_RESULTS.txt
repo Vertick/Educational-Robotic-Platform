@@ -1,0 +1,290 @@
+Simulation started at 22:55:21-07/30/18
+Testing output ports reset value...
+Output ports reset value has been passed.
+Testing the UART_BT_START_RESPONSE message...
+Received message from UART_BT:
+   HeCRE ready...                                  
+Testing the ARDUINO_STATUS_CHAR message...
+Received message from UART_BT:
+   Arduino data:  �       0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+  Message received.  
+Received message from UART_AR3:
+  Message received.  
+Received message from UART_AR4:
+  Message received.  
+Received message from UART_BT:
+   Arduino data:  슬      0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+  Message received.  
+Received message from UART_AR4:
+  Message received.  
+Received message from UART_BT:
+   Arduino data:  슬�     0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+  Message received.  
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Testing the ARDUINO discrete inputs...
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  슬슬    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_AR4:
+   Message received. 
+The ARDUINO discrete inputs test has been passed.
+Simulation finished at 22:59:00-07/30/18

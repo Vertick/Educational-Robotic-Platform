@@ -1,0 +1,1041 @@
+Analysis & Synthesis report for FPGA_MAIN_MODULE
+Mon Jul 30 23:40:19 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE
+  9. State Machine - |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Jul 30 23:40:19 2018           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; FPGA_MAIN_MODULE                                ;
+; Top-level Entity Name              ; FPGA_MAIN_MODULE                                ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 969                                             ;
+;     Total combinational functions  ; 948                                             ;
+;     Dedicated logic registers      ; 473                                             ;
+; Total registers                    ; 473                                             ;
+; Total pins                         ; 86                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C5T144C8        ;                    ;
+; Top-level entity name                                                      ; FPGA_MAIN_MODULE   ; FPGA_MAIN_MODULE   ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                             ;
++------------------------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                 ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                      ; Library ;
++------------------------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; ../VHDL/7_UART_TX_MACHINE/Source/UART_TX_MACHINE.vhd             ; yes             ; User VHDL File  ; C:/Users/pedro/Dropbox/Doctorado/2_FPGA/Firmware_v3/VHDL/7_UART_TX_MACHINE/Source/UART_TX_MACHINE.vhd             ;         ;
+; ../VHDL/6_UART_RX_MACHINE/Source/UART_RX_MACHINE.vhd             ; yes             ; User VHDL File  ; C:/Users/pedro/Dropbox/Doctorado/2_FPGA/Firmware_v3/VHDL/6_UART_RX_MACHINE/Source/UART_RX_MACHINE.vhd             ;         ;
+; ../VHDL/5_DISCRETE_COMM_ARDUINO/Source/DISCRETE_COMM_ARDUINO.vhd ; yes             ; User VHDL File  ; C:/Users/pedro/Dropbox/Doctorado/2_FPGA/Firmware_v3/VHDL/5_DISCRETE_COMM_ARDUINO/Source/DISCRETE_COMM_ARDUINO.vhd ;         ;
+; ../VHDL/4_UART_ARDUINO/Source/UART_ARDUINO.vhd                   ; yes             ; User VHDL File  ; C:/Users/pedro/Dropbox/Doctorado/2_FPGA/Firmware_v3/VHDL/4_UART_ARDUINO/Source/UART_ARDUINO.vhd                   ;         ;
+; ../VHDL/3_UART_BLUETOOTH/Source/UART_BLUETOOTH.vhd               ; yes             ; User VHDL File  ; C:/Users/pedro/Dropbox/Doctorado/2_FPGA/Firmware_v3/VHDL/3_UART_BLUETOOTH/Source/UART_BLUETOOTH.vhd               ;         ;
+; ../VHDL/2_MAIN_PROCESSOR/Source/MAIN_PROCESSOR.vhd               ; yes             ; User VHDL File  ; C:/Users/pedro/Dropbox/Doctorado/2_FPGA/Firmware_v3/VHDL/2_MAIN_PROCESSOR/Source/MAIN_PROCESSOR.vhd               ;         ;
+; ../VHDL/1_FPGA_MAIN_MODULE/Source/FPGA_MAIN_MODULE.vhd           ; yes             ; User VHDL File  ; C:/Users/pedro/Dropbox/Doctorado/2_FPGA/Firmware_v3/VHDL/1_FPGA_MAIN_MODULE/Source/FPGA_MAIN_MODULE.vhd           ;         ;
+; ../VHDL/0_Packages/RS232_Package.vhd                             ; yes             ; User VHDL File  ; C:/Users/pedro/Dropbox/Doctorado/2_FPGA/Firmware_v3/VHDL/0_Packages/RS232_Package.vhd                             ;         ;
+; ../VHDL/0_Packages/FPGA_MAIN_MODULE_Package.vhd                  ; yes             ; User VHDL File  ; C:/Users/pedro/Dropbox/Doctorado/2_FPGA/Firmware_v3/VHDL/0_Packages/FPGA_MAIN_MODULE_Package.vhd                  ;         ;
++------------------------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 969       ;
+;                                             ;           ;
+; Total combinational functions               ; 948       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 389       ;
+;     -- 3 input functions                    ; 149       ;
+;     -- <=2 input functions                  ; 410       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 813       ;
+;     -- arithmetic mode                      ; 135       ;
+;                                             ;           ;
+; Total registers                             ; 473       ;
+;     -- Dedicated logic registers            ; 473       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 86        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; CLK_50MHZ ;
+; Maximum fan-out                             ; 473       ;
+; Total fan-out                               ; 4041      ;
+; Average fan-out                             ; 2.68      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                            ;
++---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                       ; Library Name ;
++---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+; |FPGA_MAIN_MODULE                                       ; 948 (63)          ; 473 (29)     ; 0           ; 0            ; 0       ; 0         ; 86   ; 0            ; |FPGA_MAIN_MODULE                                                                         ; work         ;
+;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1| ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1                      ; work         ;
+;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2| ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2                      ; work         ;
+;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3| ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3                      ; work         ;
+;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4| ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4                      ; work         ;
+;    |MAIN_PROCESSOR:INST_MAIN_PROCESSOR|                 ; 327 (327)         ; 170 (170)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR                                      ; work         ;
+;    |UART_ARDUINO:INST_UART_ARDUINO_1|                   ; 107 (0)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1                                        ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|            ; 57 (57)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE   ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|            ; 50 (50)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE   ; work         ;
+;    |UART_ARDUINO:INST_UART_ARDUINO_2|                   ; 109 (0)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2                                        ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|            ; 57 (57)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE   ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|            ; 52 (52)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE   ; work         ;
+;    |UART_ARDUINO:INST_UART_ARDUINO_3|                   ; 107 (0)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3                                        ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|            ; 57 (57)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE   ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|            ; 50 (50)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE   ; work         ;
+;    |UART_ARDUINO:INST_UART_ARDUINO_4|                   ; 109 (0)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4                                        ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|            ; 57 (57)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE   ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|            ; 52 (52)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE   ; work         ;
+;    |UART_BLUETOOTH:INST_UART_BLUETOOTH|                 ; 90 (0)            ; 42 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH                                      ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|            ; 38 (38)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|            ; 52 (52)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE ; work         ;
++---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE                                                                                                                ;
++----------------------------------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+-----------------+
+; Name                             ; UART_STATE.RESPONSE_TO_ARDUINO_4 ; UART_STATE.RESPONSE_TO_ARDUINO_3 ; UART_STATE.RESPONSE_TO_ARDUINO_2 ; UART_STATE.RESPONSE_TO_ARDUINO_1 ; UART_STATE.IDLE ;
++----------------------------------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+-----------------+
+; UART_STATE.IDLE                  ; 0                                ; 0                                ; 0                                ; 0                                ; 0               ;
+; UART_STATE.RESPONSE_TO_ARDUINO_1 ; 0                                ; 0                                ; 0                                ; 1                                ; 1               ;
+; UART_STATE.RESPONSE_TO_ARDUINO_2 ; 0                                ; 0                                ; 1                                ; 0                                ; 1               ;
+; UART_STATE.RESPONSE_TO_ARDUINO_3 ; 0                                ; 1                                ; 0                                ; 0                                ; 1               ;
+; UART_STATE.RESPONSE_TO_ARDUINO_4 ; 1                                ; 0                                ; 0                                ; 0                                ; 1               ;
++----------------------------------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+-----------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE                                        ;
++-----------------------------------+-----------------------------------+------------------------------+--------------------+
+; Name                              ; UART_BT_STATE.ARDUINO_STATUS_DATA ; UART_BT_STATE.START_RESPONSE ; UART_BT_STATE.IDLE ;
++-----------------------------------+-----------------------------------+------------------------------+--------------------+
+; UART_BT_STATE.IDLE                ; 0                                 ; 0                            ; 0                  ;
+; UART_BT_STATE.START_RESPONSE      ; 0                                 ; 1                            ; 1                  ;
+; UART_BT_STATE.ARDUINO_STATUS_DATA ; 1                                 ; 0                            ; 1                  ;
++-----------------------------------+-----------------------------------+------------------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                           ;
++-------------------------------------------------------------------------------------+------------------------------------------------------------------------+
+; Register name                                                                       ; Reason for Removal                                                     ;
++-------------------------------------------------------------------------------------+------------------------------------------------------------------------+
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[26][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[28][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[30][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[32][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[34][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[36][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[38][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[40][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[42][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[44][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[46][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[48][0]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[48][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[48][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[48][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[48][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[48][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[48][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[48][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[47][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[47][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[47][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[47][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[47][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[47][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[47][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[46][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[46][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[46][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[46][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[46][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[46][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[46][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[45][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[45][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[45][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[45][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[45][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[45][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[45][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[44][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[44][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[44][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[44][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[44][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[44][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[44][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[43][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[43][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[43][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[43][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[43][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[43][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[43][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[42][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[42][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[42][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[42][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[42][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[42][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[42][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[41][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[41][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[41][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[41][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[41][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[41][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[41][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[40][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[40][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[40][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[40][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[40][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[40][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[40][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[39][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[39][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[39][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[39][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[39][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[39][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[39][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[38][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[38][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[38][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[38][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[38][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[38][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[38][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[37][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[37][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[37][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[37][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[37][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[37][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[37][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[36][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[36][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[36][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[36][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[36][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[36][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[36][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[35][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[35][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[35][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[35][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[35][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[35][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[35][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[34][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[34][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[34][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[34][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[34][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[34][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[34][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[33][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[33][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[33][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[33][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[33][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[33][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[33][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[32][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[32][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[32][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[32][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[32][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[32][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[32][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[31][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[31][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[31][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[31][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[31][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[31][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[31][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[30][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[30][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[30][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[30][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[30][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[30][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[30][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[29][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[29][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[29][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[29][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[29][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[29][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[29][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[28][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[28][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[28][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[28][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[28][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[28][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[28][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[27][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[27][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[27][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[27][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[27][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[27][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[27][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[26][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[26][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[26][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[26][4]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[26][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[26][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[26][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[25][1]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[25][2]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[25][3]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[25][4]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[25][5]                       ; Stuck at VCC due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[25][6]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[25][7]                       ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[7][2]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[12][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[24][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[24][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[22][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[22][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[1][5]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[0][0]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[2][5]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[1][4]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[0][5]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[42][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[36][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[34][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[32][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[7][0]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[30][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[28][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[26][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[24][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[22][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[44][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[12][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[3][1]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[8][0]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[3][4]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[24][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[23][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[5][0]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[22][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[21][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[32][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[0][2]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[32][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[1][6]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[32][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[42][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[32][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[0][4]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[30][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[30][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[30][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[7][4]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[30][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[0][6]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[28][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[28][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[28][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[28][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[26][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[40][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[26][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[26][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[26][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[6][4]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[24][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[24][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[23][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[23][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[23][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[23][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[22][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[22][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[21][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[21][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[21][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[21][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[23][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[21][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[24][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[22][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[10][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[42][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[9][1]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[42][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[6][1]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[40][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[2][1]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[1][1]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[36][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[36][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[34][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[34][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[32][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[32][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[30][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[30][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[28][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[28][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[26][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[26][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[24][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[23][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[22][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[21][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[40][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[40][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[5][5]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[10][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[5][2]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[6][5]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[4][5]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[23][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[21][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[4][2]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[7][1]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[3][5]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[2][6]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[7][5]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[9][5]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[36][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[1][2]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[34][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[32][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[30][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[28][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[26][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[14][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[44][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[10][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[12][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[42][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[8][5]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[40][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[1][0]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[10][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[2][4]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[42][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[14][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[44][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[14][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[44][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[44][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[4][4]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[44][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[40][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[14][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[44][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[44][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[12][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[10][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[10][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[42][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[9][3]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[9][4]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[9][7]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[42][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[8][7]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[7][7]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[6][7]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[40][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[5][3]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[5][7]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[40][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[4][3]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[4][7]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[3][3]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[3][7]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[2][7]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[1][7]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[0][7]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[2][2]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[36][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[36][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[36][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[36][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[34][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[34][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[34][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[34][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[14][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[8][3]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[7][3]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[6][3]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[8][2]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[2][0]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[7][6]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[10][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[4][6]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[14][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[8][1]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[0][1]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[8][6]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[6][0]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[5][1]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[4][1]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[5][4]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[14][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[3][6]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[12][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[1][3]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[0][3]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[12][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[14][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][2] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][2] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[12][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][2] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[6][2]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][2] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[4][0]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[12][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[3][0]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[9][2]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[2][3]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[3][2]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[9][6]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][3] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[10][0]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][2] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[8][4]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][2] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[9][0]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][2] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[5][6]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[6][6]  ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[49][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][7]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][4]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[13][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[38][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[6][6]                           ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][5]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[46][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[15][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[11][2]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][6]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][1]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][3]                          ; Merged with MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5] ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][1]                          ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][7]                          ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[3][7]                          ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][7]                          ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][7]                          ; Stuck at GND due to stuck port data_in                                 ;
+; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[8] ; Stuck at GND due to stuck port data_in                                 ;
+; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[8] ; Stuck at GND due to stuck port data_in                                 ;
+; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[8] ; Stuck at GND due to stuck port data_in                                 ;
+; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[8] ; Stuck at GND due to stuck port data_in                                 ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5]                          ; Stuck at VCC due to stuck port data_in                                 ;
+; Total Number of Removed Registers = 550                                             ;                                                                        ;
++-------------------------------------------------------------------------------------+------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                     ;
++---------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                                                 ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++---------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_CHAR[48][5] ; Stuck at VCC              ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5]                          ;
+;                                                               ; due to stuck port data_in ;                                                                                     ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][7]    ; Stuck at GND              ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[8] ;
+;                                                               ; due to stuck port data_in ;                                                                                     ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[3][7]    ; Stuck at GND              ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[8] ;
+;                                                               ; due to stuck port data_in ;                                                                                     ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][7]    ; Stuck at GND              ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[8] ;
+;                                                               ; due to stuck port data_in ;                                                                                     ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][7]    ; Stuck at GND              ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[8] ;
+;                                                               ; due to stuck port data_in ;                                                                                     ;
++---------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 473   ;
+; Number of registers using Synchronous Clear  ; 115   ;
+; Number of registers using Synchronous Load   ; 10    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 133   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                         ;
++--------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                          ; Fan out ;
++--------------------------------------------------------------------------------------------+---------+
+; BRD_STATUS_LED_COUNT[0]                                                                    ; 2       ;
+; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[0] ; 2       ;
+; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[0]   ; 2       ;
+; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[0]   ; 2       ;
+; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[0]   ; 2       ;
+; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[0]   ; 2       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][0]                                 ; 1       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5]                                 ; 16      ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[0]                                       ; 2       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TRANSFER_TIMER[0]                                    ; 2       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][2]                                 ; 1       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][5]                                 ; 1       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][5]                                 ; 1       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][5]                                 ; 1       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][3]                                 ; 1       ;
+; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[0]   ; 2       ;
+; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[0]   ; 2       ;
+; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[0]   ; 2       ;
+; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[0]   ; 2       ;
+; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[0] ; 2       ;
+; Total number of inverted registers = 20                                                    ;         ;
++--------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |FPGA_MAIN_MODULE|BRD_STATUS_LED_COUNT[9]                                                                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[6]       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[1]         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[1]         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[1]         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[2]         ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|BRD_STATUS_LED_WORD[4]                                                                      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[7]  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[7]    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[5]    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[3]    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[4]    ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[3]                                          ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[2]                                        ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[0]                                       ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TRANSFER_TIMER[6]                                     ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[5]    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[6]    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[7]    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[3]    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[5]  ;
+; 5:1                ; 38 bits   ; 114 LEs       ; 38 LEs               ; 76 LEs                 ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][0]                                  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0] ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][5]                                  ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][2]                                  ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][5]                                  ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[3][5]                                  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[48][5]                                  ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][2]                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Jul 30 23:40:12 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGA_MAIN_MODULE -c FPGA_MAIN_MODULE
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file /users/pedro/dropbox/doctorado/2_fpga/firmware_v3/vhdl/7_uart_tx_machine/source/uart_tx_machine.vhd
+    Info (12022): Found design unit 1: UART_TX_MACHINE-RTL
+    Info (12023): Found entity 1: UART_TX_MACHINE
+Info (12021): Found 2 design units, including 1 entities, in source file /users/pedro/dropbox/doctorado/2_fpga/firmware_v3/vhdl/6_uart_rx_machine/source/uart_rx_machine.vhd
+    Info (12022): Found design unit 1: UART_RX_MACHINE-RTL
+    Info (12023): Found entity 1: UART_RX_MACHINE
+Info (12021): Found 2 design units, including 1 entities, in source file /users/pedro/dropbox/doctorado/2_fpga/firmware_v3/vhdl/5_discrete_comm_arduino/source/discrete_comm_arduino.vhd
+    Info (12022): Found design unit 1: DISCRETE_COMM_ARDUINO-RTL
+    Info (12023): Found entity 1: DISCRETE_COMM_ARDUINO
+Info (12021): Found 2 design units, including 1 entities, in source file /users/pedro/dropbox/doctorado/2_fpga/firmware_v3/vhdl/4_uart_arduino/source/uart_arduino.vhd
+    Info (12022): Found design unit 1: UART_ARDUINO-RTL
+    Info (12023): Found entity 1: UART_ARDUINO
+Info (12021): Found 2 design units, including 1 entities, in source file /users/pedro/dropbox/doctorado/2_fpga/firmware_v3/vhdl/3_uart_bluetooth/source/uart_bluetooth.vhd
+    Info (12022): Found design unit 1: UART_BLUETOOTH-RTL
+    Info (12023): Found entity 1: UART_BLUETOOTH
+Info (12021): Found 2 design units, including 1 entities, in source file /users/pedro/dropbox/doctorado/2_fpga/firmware_v3/vhdl/2_main_processor/source/main_processor.vhd
+    Info (12022): Found design unit 1: MAIN_PROCESSOR-RTL
+    Info (12023): Found entity 1: MAIN_PROCESSOR
+Info (12021): Found 2 design units, including 1 entities, in source file /users/pedro/dropbox/doctorado/2_fpga/firmware_v3/vhdl/1_fpga_main_module/source/fpga_main_module.vhd
+    Info (12022): Found design unit 1: FPGA_MAIN_MODULE-TOP
+    Info (12023): Found entity 1: FPGA_MAIN_MODULE
+Info (12021): Found 2 design units, including 0 entities, in source file /users/pedro/dropbox/doctorado/2_fpga/firmware_v3/vhdl/0_packages/rs232_package.vhd
+    Info (12022): Found design unit 1: RS232_Package
+    Info (12022): Found design unit 2: RS232_Package-body
+Info (12021): Found 2 design units, including 0 entities, in source file /users/pedro/dropbox/doctorado/2_fpga/firmware_v3/vhdl/0_packages/fpga_main_module_package.vhd
+    Info (12022): Found design unit 1: FPGA_MAIN_MODULE_Package
+    Info (12022): Found design unit 2: FPGA_MAIN_MODULE_Package-body
+Info (12127): Elaborating entity "FPGA_MAIN_MODULE" for the top level hierarchy
+Info (12128): Elaborating entity "MAIN_PROCESSOR" for hierarchy "MAIN_PROCESSOR:INST_MAIN_PROCESSOR"
+Info (12128): Elaborating entity "UART_BLUETOOTH" for hierarchy "UART_BLUETOOTH:INST_UART_BLUETOOTH"
+Info (12128): Elaborating entity "UART_RX_MACHINE" for hierarchy "UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE"
+Info (12128): Elaborating entity "UART_TX_MACHINE" for hierarchy "UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE"
+Info (12128): Elaborating entity "UART_ARDUINO" for hierarchy "UART_ARDUINO:INST_UART_ARDUINO_1"
+Info (12128): Elaborating entity "DISCRETE_COMM_ARDUINO" for hierarchy "DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 43 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "USER_IO_8"
+    Warning (15610): No output dependent on input pin "USER_IO_21"
+    Warning (15610): No output dependent on input pin "USER_IO_22"
+    Warning (15610): No output dependent on input pin "USER_IO_26"
+    Warning (15610): No output dependent on input pin "USER_IO_27"
+    Warning (15610): No output dependent on input pin "USER_IO_30"
+    Warning (15610): No output dependent on input pin "USER_IO_44"
+    Warning (15610): No output dependent on input pin "USER_IO_47"
+    Warning (15610): No output dependent on input pin "USER_IO_48"
+    Warning (15610): No output dependent on input pin "USER_IO_53"
+    Warning (15610): No output dependent on input pin "USER_IO_55"
+    Warning (15610): No output dependent on input pin "USER_IO_57"
+    Warning (15610): No output dependent on input pin "USER_IO_63"
+    Warning (15610): No output dependent on input pin "USER_IO_64"
+    Warning (15610): No output dependent on input pin "USER_IO_65"
+    Warning (15610): No output dependent on input pin "USER_IO_67"
+    Warning (15610): No output dependent on input pin "USER_IO_69"
+    Warning (15610): No output dependent on input pin "USER_IO_70"
+    Warning (15610): No output dependent on input pin "USER_IO_71"
+    Warning (15610): No output dependent on input pin "USER_IO_72"
+    Warning (15610): No output dependent on input pin "USER_IO_79"
+    Warning (15610): No output dependent on input pin "USER_IO_80"
+    Warning (15610): No output dependent on input pin "USER_IO_81"
+    Warning (15610): No output dependent on input pin "USER_IO_86"
+    Warning (15610): No output dependent on input pin "USER_IO_89"
+    Warning (15610): No output dependent on input pin "USER_IO_90"
+    Warning (15610): No output dependent on input pin "USER_IO_91"
+    Warning (15610): No output dependent on input pin "USER_IO_96"
+    Warning (15610): No output dependent on input pin "USER_IO_97"
+    Warning (15610): No output dependent on input pin "USER_IO_99"
+    Warning (15610): No output dependent on input pin "USER_IO_100"
+    Warning (15610): No output dependent on input pin "USER_IO_101"
+    Warning (15610): No output dependent on input pin "USER_IO_112"
+    Warning (15610): No output dependent on input pin "USER_IO_118"
+    Warning (15610): No output dependent on input pin "USER_IO_120"
+    Warning (15610): No output dependent on input pin "USER_IO_121"
+    Warning (15610): No output dependent on input pin "USER_IO_126"
+    Warning (15610): No output dependent on input pin "USER_IO_129"
+    Warning (15610): No output dependent on input pin "USER_IO_132"
+    Warning (15610): No output dependent on input pin "USER_IO_136"
+    Warning (15610): No output dependent on input pin "USER_IO_137"
+    Warning (15610): No output dependent on input pin "USER_IO_139"
+    Warning (15610): No output dependent on input pin "USER_IO_141"
+Info (21057): Implemented 1062 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 62 input pins
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 976 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 4645 megabytes
+    Info: Processing ended: Mon Jul 30 23:40:19 2018
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:05
+
+

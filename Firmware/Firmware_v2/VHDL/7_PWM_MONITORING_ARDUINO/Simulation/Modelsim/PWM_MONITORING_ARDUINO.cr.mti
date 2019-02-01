@@ -1,0 +1,41 @@
+C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package.vhd {1 {vcom -work work -2002 -explicit C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Compiling package FPGA_MAIN_MODULE_Package
+-- Compiling package body FPGA_MAIN_MODULE_Package
+-- Loading package FPGA_MAIN_MODULE_Package
+
+} {} {}} {{C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package .vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package .vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Compiling package FPGA_MAIN_MODULE_Package
+** Error: C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package .vhd(32): (vcom-1136) Unknown identifier "UART_BT_MSG2SEND_TYPE".
+
+** Error: C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package .vhd(52): (vcom-1136) Unknown identifier "UART_BT_MSG2SEND_TYPE".
+
+** Error: C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package .vhd(72): (vcom-1136) Unknown identifier "UART_BT_MSG2SEND_TYPE".
+
+** Error: C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package .vhd(93): (vcom-1136) Unknown identifier "UART_MSG2SEND_TYPE".
+
+** Error: C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package .vhd(173): near ";": syntax error
+** Error: C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package .vhd(185): VHDL Compiler exiting
+
+} {9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 19.0} {}} C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/RS232_Package.vhd {1 {vcom -work work -2002 -explicit C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/RS232_Package.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package RS232_Package
+-- Compiling package body RS232_Package
+-- Loading package RS232_Package
+
+} {} {}}

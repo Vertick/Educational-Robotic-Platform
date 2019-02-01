@@ -1,0 +1,19 @@
+C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/8_DISCRETE_COMM_ARDUINO/Simulation/DISCRETE_COMM_ARDUINO_TB.vhd {1 {vcom -work work -2002 -explicit C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/8_DISCRETE_COMM_ARDUINO/Simulation/DISCRETE_COMM_ARDUINO_TB.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DISCRETE_COMM_ARDUINO_TB
+-- Compiling architecture BHV of DISCRETE_COMM_ARDUINO_TB
+
+} {} {}} C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/8_DISCRETE_COMM_ARDUINO/Source/DISCRETE_COMM_ARDUINO.vhd {1 {vcom -work work -2002 -explicit C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/8_DISCRETE_COMM_ARDUINO/Source/DISCRETE_COMM_ARDUINO.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DISCRETE_COMM_ARDUINO
+-- Compiling architecture RTL of DISCRETE_COMM_ARDUINO
+
+} {} {}}

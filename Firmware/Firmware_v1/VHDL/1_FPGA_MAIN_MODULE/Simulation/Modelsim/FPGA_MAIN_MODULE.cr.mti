@@ -1,0 +1,120 @@
+J:/Dropbox/Doctorado/FPGA/VHDL/2_MAIN_PROCESSOR/Source/MAIN_PROCESSOR.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/2_MAIN_PROCESSOR/Source/MAIN_PROCESSOR.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Loading package FPGA_MAIN_MODULE_Package
+-- Compiling entity MAIN_PROCESSOR
+-- Compiling architecture RTL of MAIN_PROCESSOR
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/3_UART_BLUETOOTH/Source/UART_BLUETOOTH.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/3_UART_BLUETOOTH/Source/UART_BLUETOOTH.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity UART_BLUETOOTH
+-- Compiling architecture RTL of UART_BLUETOOTH
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/0_Packages/RS232_Package.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/0_Packages/RS232_Package.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package RS232_Package
+-- Compiling package body RS232_Package
+-- Loading package RS232_Package
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/6_UART_ARDUINO/Source/UART_ARDUINO.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/6_UART_ARDUINO/Source/UART_ARDUINO.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity UART_ARDUINO
+-- Compiling architecture RTL of UART_ARDUINO
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Compiling package FPGA_MAIN_MODULE_Package
+-- Compiling package body FPGA_MAIN_MODULE_Package
+-- Loading package FPGA_MAIN_MODULE_Package
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/9_UART_RX_MACHINE/Source/UART_RX_MACHINE.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/9_UART_RX_MACHINE/Source/UART_RX_MACHINE.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Compiling entity UART_RX_MACHINE
+-- Compiling architecture RTL of UART_RX_MACHINE
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/7_PWM_MONITORING_ARDUINO/Source/PWM_MONITORING_ARDUINO.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/7_PWM_MONITORING_ARDUINO/Source/PWM_MONITORING_ARDUINO.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Loading package FPGA_MAIN_MODULE_Package
+-- Compiling entity PWM_MONITORING_ARDUINO
+-- Compiling architecture RTL of PWM_MONITORING_ARDUINO
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/4_UART_SHIELD/Source/UART_SHIELD.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/4_UART_SHIELD/Source/UART_SHIELD.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity UART_SHIELD
+-- Compiling architecture RTL of UART_SHIELD
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/8_DISCRETE_COMM_ARDUINO/Source/DISCRETE_COMM_ARDUINO.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/8_DISCRETE_COMM_ARDUINO/Source/DISCRETE_COMM_ARDUINO.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DISCRETE_COMM_ARDUINO
+-- Compiling architecture RTL of DISCRETE_COMM_ARDUINO
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/1_FPGA_MAIN_MODULE/Source/FPGA_MAIN_MODULE.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/1_FPGA_MAIN_MODULE/Source/FPGA_MAIN_MODULE.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Loading package FPGA_MAIN_MODULE_Package
+-- Compiling entity FPGA_MAIN_MODULE
+-- Compiling architecture TOP of FPGA_MAIN_MODULE
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/10_UART_TX_MACHINE/Source/UART_TX_MACHINE.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/10_UART_TX_MACHINE/Source/UART_TX_MACHINE.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Compiling entity UART_TX_MACHINE
+-- Compiling architecture RTL of UART_TX_MACHINE
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/5_DISCRETE_COMM_SHIELD/Source/DISCRETE_COMM_SHIELD.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/5_DISCRETE_COMM_SHIELD/Source/DISCRETE_COMM_SHIELD.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DISCRETE_COMM_SHIELD
+-- Compiling architecture RTL of DISCRETE_COMM_SHIELD
+
+} {} {}}

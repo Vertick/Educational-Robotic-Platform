@@ -1,0 +1,138 @@
+Simulation started at 23:39:45-07/30/18
+Testing output ports reset value...
+Output ports reset value has been passed.
+Testing the UART_BT_START_RESPONSE message...
+Test started at 23:39:45-07/30/18
+Received message from UART_BT:
+   HeCRE ready...                                  
+The UART_BT_START_RESPONSE message test has been passed.
+Testing the ARDUINO_UPDATE message for Arduino 1...
+Test started at 23:39:50-07/30/18
+Received message from UART_BT:
+   Arduino data:  อ       0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+The ARDUINO_UPDATE message for Arduino 1 test has been passed.
+Testing the ARDUINO_UPDATE message for Arduino 2...
+Test started at 23:39:57-07/30/18
+Received message from UART_BT:
+   Arduino data:  อ๗      0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR2:
+   Message received. 
+The ARDUINO_UPDATE message for Arduino 2 test has been passed.
+Testing the the ARDUINO_UPDATE message for Arduino 3...
+Test started at 23:40:02-07/30/18
+Received message from UART_BT:
+   Arduino data:  อ๗อ     0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR3:
+   Message received. 
+The ARDUINO_UPDATE message for Arduino 3 test has been passed.
+Testing the ARDUINO_UPDATE message for Arduino 4...
+Test started at 23:40:08-07/30/18
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR4:
+   Message received. 
+The ARDUINO_UPDATE message for Arduino 4 test has been passed.
+Testing the ARDUINO discrete ports...
+Test started at 23:40:14-07/30/18
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR4:
+   Message received. 
+The ARDUINO discrete ports for input 1 test has been passed.
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+The ARDUINO discrete ports for input 2 test has been passed.
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR2:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR1:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR4:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR3:
+   Message received. 
+Received message from UART_BT:
+   Arduino data:  อ๗ออ    0 0 0 0 0 0 0 0 0 0 0 0  
+Received message from UART_AR2:
+   Message received. 
+The ARDUINO discrete ports test has been passed.
+Simulation finished at 23:42:25-07/30/18

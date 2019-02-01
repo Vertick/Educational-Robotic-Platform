@@ -1,0 +1,70 @@
+Resource Utilization by Entity report for FPGA_MAIN_MODULE
+Tue Aug 29 11:11:54 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Resource Utilization by Entity
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                       ; Library Name ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+; |FPGA_MAIN_MODULE                                         ; 2801 (64)         ; 2026 (29)    ; 0           ; 0            ; 0       ; 0         ; 86   ; 0            ; |FPGA_MAIN_MODULE                                                                         ; work         ;
+;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|   ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1                      ; work         ;
+;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|   ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2                      ; work         ;
+;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|   ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3                      ; work         ;
+;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4|   ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4                      ; work         ;
+;    |DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|       ; 9 (9)             ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD                          ; work         ;
+;    |MAIN_PROCESSOR:INST_MAIN_PROCESSOR|                   ; 1416 (1416)       ; 971 (971)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR                                      ; work         ;
+;    |PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1| ; 178 (178)         ; 184 (184)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1                    ; work         ;
+;    |PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2| ; 156 (156)         ; 168 (168)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2                    ; work         ;
+;    |PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3| ; 156 (156)         ; 168 (168)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3                    ; work         ;
+;    |PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4| ; 156 (156)         ; 168 (168)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4                    ; work         ;
+;    |UART_ARDUINO:INST_UART_ARDUINO_1|                     ; 108 (0)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1                                        ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|              ; 57 (57)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE   ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|              ; 51 (51)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE   ; work         ;
+;    |UART_ARDUINO:INST_UART_ARDUINO_2|                     ; 108 (0)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2                                        ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|              ; 57 (57)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE   ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|              ; 51 (51)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE   ; work         ;
+;    |UART_ARDUINO:INST_UART_ARDUINO_3|                     ; 108 (0)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3                                        ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|              ; 57 (57)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE   ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|              ; 51 (51)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE   ; work         ;
+;    |UART_ARDUINO:INST_UART_ARDUINO_4|                     ; 108 (0)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4                                        ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|              ; 57 (57)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE   ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|              ; 51 (51)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE   ; work         ;
+;    |UART_BLUETOOTH:INST_UART_BLUETOOTH|                   ; 90 (0)            ; 42 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH                                      ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|              ; 38 (38)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|              ; 52 (52)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE ; work         ;
+;    |UART_SHIELD:INST_UART_SHIELD|                         ; 108 (0)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_SHIELD:INST_UART_SHIELD                                            ; work         ;
+;       |UART_RX_MACHINE:INST_UART_RX_MACHINE|              ; 57 (57)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE       ; work         ;
+;       |UART_TX_MACHINE:INST_UART_TX_MACHINE|              ; 51 (51)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_MAIN_MODULE|UART_SHIELD:INST_UART_SHIELD|UART_TX_MACHINE:INST_UART_TX_MACHINE       ; work         ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+

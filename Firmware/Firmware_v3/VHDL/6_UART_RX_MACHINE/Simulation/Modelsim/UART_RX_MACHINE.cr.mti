@@ -1,0 +1,31 @@
+C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/9_UART_RX_MACHINE/Source/UART_RX_MACHINE.vhd {1 {vcom -work work -2002 -explicit C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/9_UART_RX_MACHINE/Source/UART_RX_MACHINE.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Compiling entity UART_RX_MACHINE
+-- Compiling architecture RTL of UART_RX_MACHINE
+
+} {} {}} C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/9_UART_RX_MACHINE/Simulation/UART_RX_MACHINE_TB.vhd {1 {vcom -work work -2002 -explicit C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/9_UART_RX_MACHINE/Simulation/UART_RX_MACHINE_TB.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Compiling entity UART_RX_MACHINE_TB
+-- Compiling architecture BHV of UART_RX_MACHINE_TB
+
+} {} {}} C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/RS232_Package.vhd {1 {vcom -work work -2002 -explicit C:/Users/Pedro/Dropbox/Doctorado/FPGA/VHDL/0_Packages/RS232_Package.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package RS232_Package
+-- Compiling package body RS232_Package
+-- Loading package RS232_Package
+
+} {} {}}

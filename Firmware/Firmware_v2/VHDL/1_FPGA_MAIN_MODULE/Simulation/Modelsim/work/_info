@@ -1,0 +1,512 @@
+m255
+K3
+13
+cModel Technology
+dJ:\Dropbox\Doctorado\FPGA\VHDL\2_MAIN_PROCESSOR\Simulation\Modelsim
+Ediscrete_comm_arduino
+Z0 w1502223895
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dJ:\Dropbox\Doctorado\FPGA\VHDL\1_FPGA_MAIN_MODULE\Simulation\Modelsim
+Z5 8../../../8_DISCRETE_COMM_ARDUINO/Source/DISCRETE_COMM_ARDUINO.vhd
+Z6 F../../../8_DISCRETE_COMM_ARDUINO/Source/DISCRETE_COMM_ARDUINO.vhd
+l0
+L15
+V@R?ZJCj[WjXIS5g[8^?gA2
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1503702197.763000
+Z9 !s90 -reportprogress|300|../../../8_DISCRETE_COMM_ARDUINO/Source/DISCRETE_COMM_ARDUINO.vhd|
+Z10 !s107 ../../../8_DISCRETE_COMM_ARDUINO/Source/DISCRETE_COMM_ARDUINO.vhd|
+o-O0
+Z11 tExplicit 1
+!s100 ^1ci?iHROM:bH>N=AI;0O3
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 21 discrete_comm_arduino 0 22 @R?ZJCj[WjXIS5g[8^?gA2
+l48
+L32
+Vnc7aXfT:?VIlAcfC@:gWN2
+R7
+32
+R8
+R9
+R10
+o-O0
+R11
+!s100 zgAfFP<n;ZE_5deKP@zVL3
+!i10b 1
+Ediscrete_comm_shield
+Z12 w1502300527
+R1
+R2
+R3
+R4
+Z13 8../../../5_DISCRETE_COMM_SHIELD/Source/DISCRETE_COMM_SHIELD.vhd
+Z14 F../../../5_DISCRETE_COMM_SHIELD/Source/DISCRETE_COMM_SHIELD.vhd
+l0
+L15
+V77Rl<M7HB1fo4[ZWGV8CR1
+R7
+32
+Z15 !s108 1503702199.149000
+Z16 !s90 -reportprogress|300|../../../5_DISCRETE_COMM_SHIELD/Source/DISCRETE_COMM_SHIELD.vhd|
+Z17 !s107 ../../../5_DISCRETE_COMM_SHIELD/Source/DISCRETE_COMM_SHIELD.vhd|
+o-O0
+R11
+!s100 bkIaPb8XJ2K_mIzNNm3D:3
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 20 discrete_comm_shield 0 22 77Rl<M7HB1fo4[ZWGV8CR1
+l54
+L38
+VZZBVn9Y?4W0<0dejJ3R>>2
+R7
+32
+R15
+R16
+R17
+o-O0
+R11
+!s100 of:a_A>Vlb4odoj0JRaV83
+!i10b 1
+Efpga_main_module
+Z18 w1503262374
+Z19 DPx4 work 13 rs232_package 0 22 oG7D_g34l32IT<Dz>7knA0
+Z20 DPx4 work 24 fpga_main_module_package 0 22 S_VGa``e87[dSc;`Nk^mJ3
+R1
+R2
+R3
+R4
+Z21 8../../Source/FPGA_MAIN_MODULE.vhd
+Z22 F../../Source/FPGA_MAIN_MODULE.vhd
+l0
+L18
+VE;4l`4fVXP1b0J;GDRz=I0
+R7
+32
+Z23 !s108 1503702202.200000
+Z24 !s90 -reportprogress|300|../../Source/FPGA_MAIN_MODULE.vhd|
+Z25 !s107 ../../Source/FPGA_MAIN_MODULE.vhd|
+o-O0
+R11
+!s100 Z4D67P6ziMlmAzXUbJ_b:2
+!i10b 1
+Atop
+R19
+R20
+R1
+R2
+R3
+DEx4 work 16 fpga_main_module 0 22 E;4l`4fVXP1b0J;GDRz=I0
+l296
+L117
+V<9M@zbzUINgj2m<ON@<i32
+!s100 A5nFKmgk@nR4m@X1g^g9N2
+R7
+32
+R23
+R24
+R25
+o-O0
+R11
+!i10b 1
+Pfpga_main_module_package
+R19
+R1
+R2
+R3
+Z26 w1502824234
+R4
+Z27 8../../../0_Packages/FPGA_MAIN_MODULE_Package.vhd
+Z28 F../../../0_Packages/FPGA_MAIN_MODULE_Package.vhd
+l0
+L16
+VS_VGa``e87[dSc;`Nk^mJ3
+R7
+32
+Z29 !s108 1503702196.345000
+Z30 !s90 -reportprogress|300|../../../0_Packages/FPGA_MAIN_MODULE_Package.vhd|
+Z31 !s107 ../../../0_Packages/FPGA_MAIN_MODULE_Package.vhd|
+o-O0
+R11
+!s100 hf8B^8j7;2FEWkN@4P3183
+!i10b 1
+Bbody
+R20
+R19
+R1
+R2
+R3
+l0
+L132
+VF>38ekY[=>Eng]m>YUnKR0
+R7
+32
+R29
+R30
+R31
+o-O0
+R11
+nbody
+!s100 iKB0Qlg[>aQ7lC^ELeWZ90
+!i10b 1
+Efpga_main_module_tb
+Z32 w1503702170
+R20
+R19
+Z33 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R1
+R2
+R3
+R4
+Z34 8../../Simulation/FPGA_MAIN_MODULE_TB.vhd
+Z35 F../../Simulation/FPGA_MAIN_MODULE_TB.vhd
+l0
+L21
+V^0a93CODCboJV442jl_QU1
+!s100 M4[]HONzjRoLCP:XEOQiO1
+R7
+32
+!i10b 1
+Z36 !s108 1503702202.843000
+Z37 !s90 -reportprogress|300|../../Simulation/FPGA_MAIN_MODULE_TB.vhd|
+Z38 !s107 ../../Simulation/FPGA_MAIN_MODULE_TB.vhd|
+o-O0
+R11
+Abhv
+R20
+R19
+R33
+R1
+R2
+R3
+Z39 DEx4 work 19 fpga_main_module_tb 0 22 ^0a93CODCboJV442jl_QU1
+l741
+L25
+V3U8HNFhbZGc<MNWfzGM@a2
+!s100 P_8ni^Xm`gc`@CfU43L4f1
+R7
+32
+!i10b 1
+R36
+R37
+R38
+o-O0
+R11
+Emain_processor
+Z40 w1503700441
+R19
+R20
+R1
+R2
+R3
+R4
+Z41 8../../../2_MAIN_PROCESSOR/Source/MAIN_PROCESSOR.vhd
+Z42 F../../../2_MAIN_PROCESSOR/Source/MAIN_PROCESSOR.vhd
+l0
+L17
+VAPmmW@MZUX`XD>M;KZLKO1
+R7
+32
+Z43 !s108 1503702201.889000
+Z44 !s90 -reportprogress|300|../../../2_MAIN_PROCESSOR/Source/MAIN_PROCESSOR.vhd|
+Z45 !s107 ../../../2_MAIN_PROCESSOR/Source/MAIN_PROCESSOR.vhd|
+o-O0
+R11
+!s100 8:lNHP_3O5M@DMbBDbX4@3
+!i10b 1
+Artl
+R19
+R20
+R1
+R2
+R3
+DEx4 work 14 main_processor 0 22 APmmW@MZUX`XD>M;KZLKO1
+l82
+L49
+VDj;`<g^Kb]KZ1ARQBJYzJ2
+R7
+32
+R43
+R44
+R45
+o-O0
+R11
+!s100 :VX2JWSMREMi<Aj=Ji>h02
+!i10b 1
+Epwm_monitoring_arduino
+Z46 w1502298627
+R19
+R20
+R1
+R2
+R3
+R4
+Z47 8../../../7_PWM_MONITORING_ARDUINO/Source/PWM_MONITORING_ARDUINO.vhd
+Z48 F../../../7_PWM_MONITORING_ARDUINO/Source/PWM_MONITORING_ARDUINO.vhd
+l0
+L16
+V>B67KNJUWa8n1QNc<OCM23
+R7
+32
+Z49 !s108 1503702198.137000
+Z50 !s90 -reportprogress|300|../../../7_PWM_MONITORING_ARDUINO/Source/PWM_MONITORING_ARDUINO.vhd|
+Z51 !s107 ../../../7_PWM_MONITORING_ARDUINO/Source/PWM_MONITORING_ARDUINO.vhd|
+o-O0
+R11
+!s100 N12k0lH3K^ZLlR<<:[GAM3
+!i10b 1
+Artl
+R19
+R20
+R1
+R2
+R3
+DEx4 work 22 pwm_monitoring_arduino 0 22 >B67KNJUWa8n1QNc<OCM23
+l56
+L34
+V_IDN`9fJm9SCHO5cVYE1J3
+R7
+32
+R49
+R50
+R51
+o-O0
+R11
+!s100 635AIUSNUiIf;6]`5o<ZA3
+!i10b 1
+Prs232_package
+R1
+R2
+R3
+Z52 w1502789316
+R4
+Z53 8../../../0_Packages/RS232_Package.vhd
+Z54 F../../../0_Packages/RS232_Package.vhd
+l0
+L15
+VoG7D_g34l32IT<Dz>7knA0
+R7
+32
+Z55 !s108 1503702195.594000
+Z56 !s90 -reportprogress|300|../../../0_Packages/RS232_Package.vhd|
+Z57 !s107 ../../../0_Packages/RS232_Package.vhd|
+o-O0
+R11
+!s100 F1nb3>4=d@7KDOok7imMW2
+!i10b 1
+Bbody
+R19
+R1
+R2
+R3
+l0
+L305
+V4i:LK4WSna1F`1NnKWo>70
+R7
+32
+R55
+R56
+R57
+o-O0
+R11
+nbody
+!s100 =Jo[dP9a:g;Fk_]ZKg8ff3
+!i10b 1
+Euart_arduino
+Z58 w1502307173
+R1
+R2
+R3
+R4
+Z59 8../../../6_UART_ARDUINO/Source/UART_ARDUINO.vhd
+Z60 F../../../6_UART_ARDUINO/Source/UART_ARDUINO.vhd
+l0
+L15
+VNidIU9A:59YOSOYz`C]kl3
+R7
+32
+Z61 !s108 1503702198.647000
+Z62 !s90 -reportprogress|300|../../../6_UART_ARDUINO/Source/UART_ARDUINO.vhd|
+Z63 !s107 ../../../6_UART_ARDUINO/Source/UART_ARDUINO.vhd|
+o-O0
+R11
+!s100 BE6C6nAk0CWJG22kDdOgZ0
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 12 uart_arduino 0 22 NidIU9A:59YOSOYz`C]kl3
+l65
+L31
+VPF28@ggo6Tm_OYEn[C6?k2
+R7
+32
+R61
+R62
+R63
+o-O0
+R11
+!s100 TGZTUan2>f>H=B?FLM6T71
+!i10b 1
+Euart_bluetooth
+Z64 w1502305105
+R1
+R2
+R3
+R4
+Z65 8../../../3_UART_BLUETOOTH/Source/UART_BLUETOOTH.vhd
+Z66 F../../../3_UART_BLUETOOTH/Source/UART_BLUETOOTH.vhd
+l0
+L15
+VYiL1jiI40?dhLKcbTXgeK1
+R7
+32
+Z67 !s108 1503702201.113000
+Z68 !s90 -reportprogress|300|../../../3_UART_BLUETOOTH/Source/UART_BLUETOOTH.vhd|
+Z69 !s107 ../../../3_UART_BLUETOOTH/Source/UART_BLUETOOTH.vhd|
+o-O0
+R11
+!s100 Nbb35NmaJo2hN1AcX1Kaf2
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 14 uart_bluetooth 0 22 YiL1jiI40?dhLKcbTXgeK1
+l65
+L31
+VTPR12zE7>FOUZ2FKFVSPf1
+R7
+32
+R67
+R68
+R69
+o-O0
+R11
+!s100 i3Rbz_8UcI`^MI9hSSZLb2
+!i10b 1
+Euart_rx_machine
+Z70 w1502220719
+R19
+R1
+R2
+R3
+R4
+Z71 8../../../9_UART_RX_MACHINE/Source/UART_RX_MACHINE.vhd
+Z72 F../../../9_UART_RX_MACHINE/Source/UART_RX_MACHINE.vhd
+l0
+L16
+VTzE[ocQadi3ADS_da:V511
+R7
+32
+Z73 !s108 1503702197.405000
+Z74 !s90 -reportprogress|300|../../../9_UART_RX_MACHINE/Source/UART_RX_MACHINE.vhd|
+Z75 !s107 ../../../9_UART_RX_MACHINE/Source/UART_RX_MACHINE.vhd|
+o-O0
+R11
+!s100 E_dCVe9e[ObJTfOn:H>KC2
+!i10b 1
+Artl
+R19
+R1
+R2
+R3
+DEx4 work 15 uart_rx_machine 0 22 TzE[ocQadi3ADS_da:V511
+l49
+L28
+VeSdZ>`755Q@<e?oMd]Ng>3
+R7
+32
+R73
+R74
+R75
+o-O0
+R11
+!s100 VQOSHLoF^1X19IK9IJ6LD0
+!i10b 1
+Euart_shield
+Z76 w1502306677
+R1
+R2
+R3
+R4
+Z77 8../../../4_UART_SHIELD/Source/UART_SHIELD.vhd
+Z78 F../../../4_UART_SHIELD/Source/UART_SHIELD.vhd
+l0
+L15
+V6haERkbV@fGWNnGk9OJ:d1
+R7
+32
+Z79 !s108 1503702199.673000
+Z80 !s90 -reportprogress|300|../../../4_UART_SHIELD/Source/UART_SHIELD.vhd|
+Z81 !s107 ../../../4_UART_SHIELD/Source/UART_SHIELD.vhd|
+o-O0
+R11
+!s100 lLRX9FBR:3DG8n=68UVFe3
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 11 uart_shield 0 22 6haERkbV@fGWNnGk9OJ:d1
+l65
+L31
+VVfHX2Ai0WO92T@A^EAQ1W1
+R7
+32
+R79
+R80
+R81
+o-O0
+R11
+!s100 KAbB^1YZH5eWfWndbidVZ2
+!i10b 1
+Euart_tx_machine
+Z82 w1502951179
+R19
+R1
+R2
+R3
+R4
+Z83 8../../../10_UART_TX_MACHINE/Source/UART_TX_MACHINE.vhd
+Z84 F../../../10_UART_TX_MACHINE/Source/UART_TX_MACHINE.vhd
+l0
+L16
+VCXBaF8Z:4N7RcdSk]k]eP2
+R7
+32
+Z85 !s108 1503702196.961000
+Z86 !s90 -reportprogress|300|../../../10_UART_TX_MACHINE/Source/UART_TX_MACHINE.vhd|
+Z87 !s107 ../../../10_UART_TX_MACHINE/Source/UART_TX_MACHINE.vhd|
+o-O0
+R11
+!s100 P01`lH2@RGI>>d]67SNH@0
+!i10b 1
+Artl
+R19
+R1
+R2
+R3
+DEx4 work 15 uart_tx_machine 0 22 CXBaF8Z:4N7RcdSk]k]eP2
+l47
+L27
+VnM?OSH3l9c=Al>KJ96?:e2
+R7
+32
+R85
+R86
+R87
+o-O0
+R11
+!s100 FZ0]XJ12zBU@g:Q8NUd=L3
+!i10b 1

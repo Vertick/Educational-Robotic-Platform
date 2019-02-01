@@ -1,0 +1,123 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1
+Prs232_package
+Z0 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 w1502789316
+Z4 dJ:\Dropbox\Doctorado\FPGA\VHDL\10_UART_TX_MACHINE\Simulation\Modelsim
+Z5 8../../../0_Packages/RS232_Package.vhd
+Z6 F../../../0_Packages/RS232_Package.vhd
+l0
+L15
+VoG7D_g34l32IT<Dz>7knA0
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1503591376.633000
+Z9 !s90 -reportprogress|300|../../../0_Packages/RS232_Package.vhd|
+Z10 !s107 ../../../0_Packages/RS232_Package.vhd|
+o-O0
+Z11 tExplicit 1
+!s100 F1nb3>4=d@7KDOok7imMW2
+!i10b 1
+Bbody
+Z12 DPx4 work 13 rs232_package 0 22 oG7D_g34l32IT<Dz>7knA0
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+l0
+L305
+V4i:LK4WSna1F`1NnKWo>70
+R7
+32
+R8
+R9
+R10
+o-O0
+R11
+nbody
+!s100 =Jo[dP9a:g;Fk_]ZKg8ff3
+!i10b 1
+Euart_tx_machine
+Z14 w1502951179
+R12
+R13
+R1
+R2
+R4
+Z15 8../../Source/UART_TX_MACHINE.vhd
+Z16 F../../Source/UART_TX_MACHINE.vhd
+l0
+L16
+VCXBaF8Z:4N7RcdSk]k]eP2
+R7
+32
+Z17 !s108 1503591377.149000
+Z18 !s90 -reportprogress|300|../../Source/UART_TX_MACHINE.vhd|
+Z19 !s107 ../../Source/UART_TX_MACHINE.vhd|
+o-O0
+R11
+!s100 P01`lH2@RGI>>d]67SNH@0
+!i10b 1
+Artl
+R12
+R13
+R1
+R2
+DEx4 work 15 uart_tx_machine 0 22 CXBaF8Z:4N7RcdSk]k]eP2
+l47
+L27
+VnM?OSH3l9c=Al>KJ96?:e2
+!s100 FZ0]XJ12zBU@g:Q8NUd=L3
+R7
+32
+R17
+R18
+R19
+o-O0
+R11
+!i10b 1
+Euart_tx_machine_tb
+Z20 w1503591302
+R12
+Z21 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R13
+R1
+R2
+R4
+Z22 8../../Simulation/UART_TX_MACHINE_TB.vhd
+Z23 F../../Simulation/UART_TX_MACHINE_TB.vhd
+l0
+L18
+VmL`nZRBm?]^fPe:dTG0kB1
+!s100 jd0j2W1U9e<D:P]X_@NDU0
+R7
+32
+!i10b 1
+Z24 !s108 1503591378.403000
+Z25 !s90 -reportprogress|300|../../Simulation/UART_TX_MACHINE_TB.vhd|
+Z26 !s107 ../../Simulation/UART_TX_MACHINE_TB.vhd|
+o-O0
+R11
+Abhv
+R12
+R21
+R13
+R1
+R2
+Z27 DEx4 work 18 uart_tx_machine_tb 0 22 mL`nZRBm?]^fPe:dTG0kB1
+l64
+L22
+Z28 VhOIe`59k38Yek751SNaBJ1
+Z29 !s100 Z8h^SlTDVzgmb:>MRm:kT1
+R7
+32
+!i10b 1
+R24
+R25
+R26
+o-O0
+R11

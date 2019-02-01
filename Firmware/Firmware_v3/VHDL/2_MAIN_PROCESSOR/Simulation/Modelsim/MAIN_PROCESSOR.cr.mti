@@ -1,0 +1,25 @@
+J:/Dropbox/Doctorado/FPGA/VHDL/0_Packages/RS232_Package.vhd {1 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/0_Packages/RS232_Package.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package RS232_Package
+-- Compiling package body RS232_Package
+-- Loading package RS232_Package
+
+} {} {}} J:/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package.vhd {2 {vcom -work work -2002 -explicit J:/Dropbox/Doctorado/FPGA/VHDL/0_Packages/FPGA_MAIN_MODULE_Package.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+** Warning: (vcom-7) Failed to open lock file "J:/Dropbox/Doctorado/FPGA/VHDL/2_MAIN_PROCESSOR/Simulation/Modelsim/work/_lock" in create mode.
+
+Permission denied. (errno = EACCES)
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RS232_Package
+-- Compiling package FPGA_MAIN_MODULE_Package
+-- Compiling package body FPGA_MAIN_MODULE_Package
+-- Loading package FPGA_MAIN_MODULE_Package
+
+} {} {}}

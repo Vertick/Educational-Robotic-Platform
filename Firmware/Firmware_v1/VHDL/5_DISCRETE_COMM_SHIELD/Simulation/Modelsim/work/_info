@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Pedro\Dropbox\Doctorado\FPGA\VHDL\7_PWM_MONITORING_ARDUINO\Simulation\Modelsim
+Ediscrete_comm_shield
+Z0 w1502300527
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dJ:\Dropbox\Doctorado\FPGA\VHDL\5_DISCRETE_COMM_SHIELD\Simulation\Modelsim
+Z5 8../../Source/DISCRETE_COMM_SHIELD.vhd
+Z6 F../../Source/DISCRETE_COMM_SHIELD.vhd
+l0
+L15
+V77Rl<M7HB1fo4[ZWGV8CR1
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1503588472.990000
+Z9 !s90 -reportprogress|300|../../Source/DISCRETE_COMM_SHIELD.vhd|
+Z10 !s107 ../../Source/DISCRETE_COMM_SHIELD.vhd|
+o-O0
+Z11 tExplicit 1
+!s100 bkIaPb8XJ2K_mIzNNm3D:3
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 20 discrete_comm_shield 0 22 77Rl<M7HB1fo4[ZWGV8CR1
+l54
+L38
+VZZBVn9Y?4W0<0dejJ3R>>2
+!s100 of:a_A>Vlb4odoj0JRaV83
+R7
+32
+R8
+R9
+R10
+o-O0
+R11
+!i10b 1
+Ediscrete_comm_shield_tb
+Z12 w1503587916
+Z13 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R1
+R2
+R3
+R4
+Z14 8../../Simulation/DISCRETE_COMM_SHIELD_TB.vhd
+Z15 F../../Simulation/DISCRETE_COMM_SHIELD_TB.vhd
+l0
+L17
+VAPRWDZIW_nChg=3HFT3bI0
+!s100 8;b[CnNGLdRMK:3YIHb3f3
+R7
+32
+!i10b 1
+Z16 !s108 1503588473.337000
+Z17 !s90 -reportprogress|300|../../Simulation/DISCRETE_COMM_SHIELD_TB.vhd|
+Z18 !s107 ../../Simulation/DISCRETE_COMM_SHIELD_TB.vhd|
+o-O0
+R11
+Abhv
+R13
+R1
+R2
+R3
+Z19 DEx4 work 23 discrete_comm_shield_tb 0 22 APRWDZIW_nChg=3HFT3bI0
+l84
+L21
+Z20 Vmk03oQaJP=Q]QRc>?8Mc<0
+Z21 !s100 V4Z0bU`QnBBI@HhgoAYIf1
+R7
+32
+!i10b 1
+R16
+R17
+R18
+o-O0
+R11

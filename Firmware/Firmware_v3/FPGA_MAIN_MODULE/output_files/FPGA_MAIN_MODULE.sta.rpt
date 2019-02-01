@@ -1,0 +1,1364 @@
+TimeQuest Timing Analyzer report for FPGA_MAIN_MODULE
+Mon Jul 30 23:40:30 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Slow Model Fmax Summary
+  7. Slow Model Setup Summary
+  8. Slow Model Hold Summary
+  9. Slow Model Recovery Summary
+ 10. Slow Model Removal Summary
+ 11. Slow Model Minimum Pulse Width Summary
+ 12. Slow Model Setup: 'CLK_50MHZ'
+ 13. Slow Model Hold: 'CLK_50MHZ'
+ 14. Slow Model Minimum Pulse Width: 'CLK_50MHZ'
+ 15. Setup Times
+ 16. Hold Times
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Propagation Delay
+ 20. Minimum Propagation Delay
+ 21. Fast Model Setup Summary
+ 22. Fast Model Hold Summary
+ 23. Fast Model Recovery Summary
+ 24. Fast Model Removal Summary
+ 25. Fast Model Minimum Pulse Width Summary
+ 26. Fast Model Setup: 'CLK_50MHZ'
+ 27. Fast Model Hold: 'CLK_50MHZ'
+ 28. Fast Model Minimum Pulse Width: 'CLK_50MHZ'
+ 29. Setup Times
+ 30. Hold Times
+ 31. Clock to Output Times
+ 32. Minimum Clock to Output Times
+ 33. Propagation Delay
+ 34. Minimum Propagation Delay
+ 35. Multicorner Timing Analysis Summary
+ 36. Setup Times
+ 37. Hold Times
+ 38. Clock to Output Times
+ 39. Minimum Clock to Output Times
+ 40. Progagation Delay
+ 41. Minimum Progagation Delay
+ 42. Setup Transfers
+ 43. Hold Transfers
+ 44. Report TCCS
+ 45. Report RSKM
+ 46. Unconstrained Paths
+ 47. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; FPGA_MAIN_MODULE                                                  ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C5T144C8                                                       ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------+
+; SDC File List                                            ;
++----------------------+--------+--------------------------+
+; SDC File Path        ; Status ; Read at                  ;
++----------------------+--------+--------------------------+
+; FPGA_MAIN_MODULE.sdc ; OK     ; Mon Jul 30 23:40:29 2018 ;
++----------------------+--------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; Clock Name ; Type ; Period ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; CLK_50MHZ  ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK_50MHZ } ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 121.12 MHz ; 121.12 MHz      ; CLK_50MHZ  ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow Model Setup Summary           ;
++-----------+--------+---------------+
+; Clock     ; Slack  ; End Point TNS ;
++-----------+--------+---------------+
+; CLK_50MHZ ; 11.744 ; 0.000         ;
++-----------+--------+---------------+
+
+
++-----------------------------------+
+; Slow Model Hold Summary           ;
++-----------+-------+---------------+
+; Clock     ; Slack ; End Point TNS ;
++-----------+-------+---------------+
+; CLK_50MHZ ; 0.499 ; 0.000         ;
++-----------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-----------+-------+--------------------+
+; Clock     ; Slack ; End Point TNS      ;
++-----------+-------+--------------------+
+; CLK_50MHZ ; 8.758 ; 0.000              ;
++-----------+-------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'CLK_50MHZ'                                                                                                                                                                                                      ;
++--------+----------------------------------------------------------------------------------------+------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                              ; To Node                                                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------------------------------------------------------+------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 11.744 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.003     ; 8.293      ;
+; 11.744 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.003     ; 8.293      ;
+; 12.090 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.013     ; 7.937      ;
+; 12.107 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.028     ; 7.905      ;
+; 12.107 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.028     ; 7.905      ;
+; 12.107 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.028     ; 7.905      ;
+; 12.107 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.028     ; 7.905      ;
+; 12.108 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.027     ; 7.905      ;
+; 12.108 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.027     ; 7.905      ;
+; 12.108 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.027     ; 7.905      ;
+; 12.108 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.027     ; 7.905      ;
+; 12.108 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.027     ; 7.905      ;
+; 12.108 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.027     ; 7.905      ;
+; 12.108 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.027     ; 7.905      ;
+; 12.108 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.027     ; 7.905      ;
+; 12.142 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.009     ; 7.889      ;
+; 12.142 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.009     ; 7.889      ;
+; 12.142 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][2] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.009     ; 7.889      ;
+; 12.142 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.009     ; 7.889      ;
+; 12.150 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.018     ; 7.872      ;
+; 12.150 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.018     ; 7.872      ;
+; 12.150 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.018     ; 7.872      ;
+; 12.150 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.018     ; 7.872      ;
+; 12.150 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.018     ; 7.872      ;
+; 12.150 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.018     ; 7.872      ;
+; 12.150 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.018     ; 7.872      ;
+; 12.150 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.018     ; 7.872      ;
+; 12.173 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][4] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.004      ; 7.871      ;
+; 12.173 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][4] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.004      ; 7.871      ;
+; 12.173 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.004      ; 7.871      ;
+; 12.173 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.004      ; 7.871      ;
+; 12.173 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.004      ; 7.871      ;
+; 12.173 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][7] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.004      ; 7.871      ;
+; 12.173 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][7] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.004      ; 7.871      ;
+; 12.173 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][7] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.004      ; 7.871      ;
+; 12.173 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][7] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.004      ; 7.871      ;
+; 12.190 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[4]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 7.829      ;
+; 12.190 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[4]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 7.829      ;
+; 12.246 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[0]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.031      ; 7.825      ;
+; 12.253 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[1]                                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[0]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.016      ; 7.803      ;
+; 12.257 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[10]                                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 7.762      ;
+; 12.257 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[10]                                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 7.762      ;
+; 12.284 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[3]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.031      ; 7.787      ;
+; 12.284 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[2]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.031      ; 7.787      ;
+; 12.284 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[7]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.031      ; 7.787      ;
+; 12.294 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[4]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.019      ; 7.765      ;
+; 12.294 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[5]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.019      ; 7.765      ;
+; 12.294 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[6]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.019      ; 7.765      ;
+; 12.294 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[1]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.019      ; 7.765      ;
+; 12.315 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.003     ; 7.722      ;
+; 12.315 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.003     ; 7.722      ;
+; 12.315 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.003     ; 7.722      ;
+; 12.323 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.008     ; 7.709      ;
+; 12.328 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][4] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 7.700      ;
+; 12.328 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 7.700      ;
+; 12.328 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][2] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 7.700      ;
+; 12.328 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 7.700      ;
+; 12.328 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 7.700      ;
+; 12.328 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 7.700      ;
+; 12.328 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 7.700      ;
+; 12.350 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[2]                                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[0]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.016      ; 7.706      ;
+; 12.356 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 7.673      ;
+; 12.356 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 7.673      ;
+; 12.356 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 7.673      ;
+; 12.356 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 7.673      ;
+; 12.357 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.010     ; 7.673      ;
+; 12.357 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.010     ; 7.673      ;
+; 12.357 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.010     ; 7.673      ;
+; 12.357 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.010     ; 7.673      ;
+; 12.357 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.010     ; 7.673      ;
+; 12.357 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.010     ; 7.673      ;
+; 12.357 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.010     ; 7.673      ;
+; 12.357 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.010     ; 7.673      ;
+; 12.374 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[7]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 7.645      ;
+; 12.374 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[7]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 7.645      ;
+; 12.391 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.008      ; 7.657      ;
+; 12.391 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.008      ; 7.657      ;
+; 12.391 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][2] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.008      ; 7.657      ;
+; 12.391 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.008      ; 7.657      ;
+; 12.392 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TRANSFER_TIMER[0]                                ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[0]      ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.002     ; 7.646      ;
+; 12.392 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TRANSFER_TIMER[0]                                ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[1]      ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.002     ; 7.646      ;
+; 12.392 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TRANSFER_TIMER[0]                                ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[2]      ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.002     ; 7.646      ;
+; 12.392 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TRANSFER_TIMER[0]                                ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[3]      ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.002     ; 7.646      ;
+; 12.392 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TRANSFER_TIMER[0]                                ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[4]      ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.002     ; 7.646      ;
+; 12.392 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TRANSFER_TIMER[0]                                ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[5]      ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.002     ; 7.646      ;
+; 12.399 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.001     ; 7.640      ;
+; 12.399 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.001     ; 7.640      ;
+; 12.399 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.001     ; 7.640      ;
+; 12.399 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.001     ; 7.640      ;
+; 12.399 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.001     ; 7.640      ;
+; 12.399 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.001     ; 7.640      ;
+; 12.399 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.001     ; 7.640      ;
+; 12.399 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.001     ; 7.640      ;
+; 12.422 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][4] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.021      ; 7.639      ;
+; 12.422 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][4] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.021      ; 7.639      ;
+; 12.422 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.021      ; 7.639      ;
+; 12.422 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.021      ; 7.639      ;
+; 12.422 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.021      ; 7.639      ;
+; 12.422 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][7] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.021      ; 7.639      ;
+; 12.422 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][7] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.021      ; 7.639      ;
++--------+----------------------------------------------------------------------------------------+------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'CLK_50MHZ'                                                                                                                                                                                                                                            ;
++-------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                                   ; To Node                                                                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.499 ; BRD_STATUS_LED_WORD[1]                                                                      ; BRD_STATUS_LED_WORD[1]                                                                      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; BRD_STATUS_LED_WORD[0]                                                                      ; BRD_STATUS_LED_WORD[0]                                                                      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE      ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE.IDLE                                       ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE.IDLE                                       ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TX_ACTIVE                                             ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TX_ACTIVE                                             ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE.START_RESPONSE                             ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE.START_RESPONSE                             ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE      ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TX_ACTIVE                                                ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TX_ACTIVE                                                ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.IDLE                                          ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.IDLE                                          ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0]                                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0]                                  ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_1                         ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_1                         ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_4                         ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_4                         ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_2                         ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_2                         ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_SEND[1]                                      ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_SEND[1]                                      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_SEND[2]                                      ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_SEND[2]                                      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[0]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[0]                                   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[1]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[1]                                   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[2]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[2]                                   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[3]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[3]                                   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[4]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[4]                                   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.805      ;
++-------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLK_50MHZ'                                                                                                               ;
++-------+--------------+----------------+------------------+-----------+------------+-----------------------------------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                                                                ;
++-------+--------------+----------------+------------------+-----------+------------+-----------------------------------------------------------------------+
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[0]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[0]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[10]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[10]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[11]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[11]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[12]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[12]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[13]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[13]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[14]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[14]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[15]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[15]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[16]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[16]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[17]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[17]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[18]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[18]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[19]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[19]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[1]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[1]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[20]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[20]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[21]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[21]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[22]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[22]                                              ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[2]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[2]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[3]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[3]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[4]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[4]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[5]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[5]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[6]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[6]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[7]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[7]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[8]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[8]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[9]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[9]                                               ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[0]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[0]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[1]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[1]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[2]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[2]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[3]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[3]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[4]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[4]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[5]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[5]                                                ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_1_AR_D2_FF ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_1_AR_D2_FF ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_2_AR_D4_FF ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_2_AR_D4_FF ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_3_AR_D7_FF ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_3_AR_D7_FF ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[0] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[0] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[1] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[1] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[2] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[2] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_1_AR_D8   ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_1_AR_D8   ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_2_AR_D12  ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_2_AR_D12  ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_3_AR_D13  ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_3_AR_D13  ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_1_AR_D2_FF ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_1_AR_D2_FF ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_2_AR_D4_FF ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_2_AR_D4_FF ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_3_AR_D7_FF ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_3_AR_D7_FF ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[0] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[0] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[1] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[1] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2] ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2] ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_1_AR_D8   ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_1_AR_D8   ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_2_AR_D12  ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_2_AR_D12  ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_3_AR_D13  ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_3_AR_D13  ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_1_AR_D2_FF ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_1_AR_D2_FF ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_2_AR_D4_FF ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_2_AR_D4_FF ;
+; 8.758 ; 10.000       ; 1.242          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_3_AR_D7_FF ;
+; 8.758 ; 10.000       ; 1.242          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_3_AR_D7_FF ;
++-------+--------------+----------------+------------------+-----------+------------+-----------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Setup Times                                                                    ;
++------------------+------------+--------+--------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------------+------------+--------+--------+------------+-----------------+
+; DISC_IN_1_AR1_D2 ; CLK_50MHZ  ; 5.000  ; 5.000  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR2_D2 ; CLK_50MHZ  ; 5.517  ; 5.517  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR3_D2 ; CLK_50MHZ  ; 5.362  ; 5.362  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR4_D2 ; CLK_50MHZ  ; 5.250  ; 5.250  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR1_D4 ; CLK_50MHZ  ; 5.044  ; 5.044  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR2_D4 ; CLK_50MHZ  ; 0.200  ; 0.200  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR3_D4 ; CLK_50MHZ  ; 5.350  ; 5.350  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR4_D4 ; CLK_50MHZ  ; 0.532  ; 0.532  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR1_D7 ; CLK_50MHZ  ; 5.115  ; 5.115  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR2_D7 ; CLK_50MHZ  ; 4.803  ; 4.803  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR3_D7 ; CLK_50MHZ  ; 5.300  ; 5.300  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR4_D7 ; CLK_50MHZ  ; 4.846  ; 4.846  ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_RX      ; CLK_50MHZ  ; 5.377  ; 5.377  ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_RX      ; CLK_50MHZ  ; 5.284  ; 5.284  ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_RX      ; CLK_50MHZ  ; 5.284  ; 5.284  ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_RX      ; CLK_50MHZ  ; 5.320  ; 5.320  ; Rise       ; CLK_50MHZ       ;
+; UART_BT_RX       ; CLK_50MHZ  ; 5.137  ; 5.137  ; Rise       ; CLK_50MHZ       ;
+; nRESET           ; CLK_50MHZ  ; 11.269 ; 11.269 ; Rise       ; CLK_50MHZ       ;
++------------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Hold Times                                                                     ;
++------------------+------------+--------+--------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------------+------------+--------+--------+------------+-----------------+
+; DISC_IN_1_AR1_D2 ; CLK_50MHZ  ; -4.309 ; -4.309 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR2_D2 ; CLK_50MHZ  ; -5.251 ; -5.251 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR3_D2 ; CLK_50MHZ  ; -5.095 ; -5.095 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR4_D2 ; CLK_50MHZ  ; -4.982 ; -4.982 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR1_D4 ; CLK_50MHZ  ; -4.305 ; -4.305 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR2_D4 ; CLK_50MHZ  ; 0.066  ; 0.066  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR3_D4 ; CLK_50MHZ  ; -5.083 ; -5.083 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR4_D4 ; CLK_50MHZ  ; -0.265 ; -0.265 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR1_D7 ; CLK_50MHZ  ; -4.424 ; -4.424 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR2_D7 ; CLK_50MHZ  ; -4.537 ; -4.537 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR3_D7 ; CLK_50MHZ  ; -5.033 ; -5.033 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR4_D7 ; CLK_50MHZ  ; -4.578 ; -4.578 ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_RX      ; CLK_50MHZ  ; -4.959 ; -4.959 ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_RX      ; CLK_50MHZ  ; -5.011 ; -5.011 ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_RX      ; CLK_50MHZ  ; -5.016 ; -5.016 ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_RX      ; CLK_50MHZ  ; -4.971 ; -4.971 ; Rise       ; CLK_50MHZ       ;
+; UART_BT_RX       ; CLK_50MHZ  ; -4.571 ; -4.571 ; Rise       ; CLK_50MHZ       ;
+; nRESET           ; CLK_50MHZ  ; -5.088 ; -5.088 ; Rise       ; CLK_50MHZ       ;
++------------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Clock to Output Times                                                          ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; DISC_OUT_1_AR1_D8  ; CLK_50MHZ  ; 8.993 ; 8.993 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR2_D8  ; CLK_50MHZ  ; 9.045 ; 9.045 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR3_D8  ; CLK_50MHZ  ; 8.001 ; 8.001 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR4_D8  ; CLK_50MHZ  ; 8.212 ; 8.212 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR1_D12 ; CLK_50MHZ  ; 8.064 ; 8.064 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR2_D12 ; CLK_50MHZ  ; 9.003 ; 9.003 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR3_D12 ; CLK_50MHZ  ; 8.121 ; 8.121 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR4_D12 ; CLK_50MHZ  ; 7.499 ; 7.499 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR1_D13 ; CLK_50MHZ  ; 8.473 ; 8.473 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR2_D13 ; CLK_50MHZ  ; 8.206 ; 8.206 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR3_D13 ; CLK_50MHZ  ; 7.646 ; 7.646 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR4_D13 ; CLK_50MHZ  ; 8.081 ; 8.081 ; Rise       ; CLK_50MHZ       ;
+; LED_2              ; CLK_50MHZ  ; 9.504 ; 9.504 ; Rise       ; CLK_50MHZ       ;
+; LED_4              ; CLK_50MHZ  ; 8.208 ; 8.208 ; Rise       ; CLK_50MHZ       ;
+; LED_5              ; CLK_50MHZ  ; 8.215 ; 8.215 ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_TX        ; CLK_50MHZ  ; 8.962 ; 8.962 ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_TX        ; CLK_50MHZ  ; 9.127 ; 9.127 ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_TX        ; CLK_50MHZ  ; 8.606 ; 8.606 ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_TX        ; CLK_50MHZ  ; 8.777 ; 8.777 ; Rise       ; CLK_50MHZ       ;
+; UART_BT_TX         ; CLK_50MHZ  ; 8.000 ; 8.000 ; Rise       ; CLK_50MHZ       ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                  ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; DISC_OUT_1_AR1_D8  ; CLK_50MHZ  ; 8.993 ; 8.993 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR2_D8  ; CLK_50MHZ  ; 9.045 ; 9.045 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR3_D8  ; CLK_50MHZ  ; 8.001 ; 8.001 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR4_D8  ; CLK_50MHZ  ; 8.212 ; 8.212 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR1_D12 ; CLK_50MHZ  ; 8.064 ; 8.064 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR2_D12 ; CLK_50MHZ  ; 9.003 ; 9.003 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR3_D12 ; CLK_50MHZ  ; 8.121 ; 8.121 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR4_D12 ; CLK_50MHZ  ; 7.499 ; 7.499 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR1_D13 ; CLK_50MHZ  ; 8.473 ; 8.473 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR2_D13 ; CLK_50MHZ  ; 8.206 ; 8.206 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR3_D13 ; CLK_50MHZ  ; 7.646 ; 7.646 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR4_D13 ; CLK_50MHZ  ; 8.081 ; 8.081 ; Rise       ; CLK_50MHZ       ;
+; LED_2              ; CLK_50MHZ  ; 9.504 ; 9.504 ; Rise       ; CLK_50MHZ       ;
+; LED_4              ; CLK_50MHZ  ; 8.208 ; 8.208 ; Rise       ; CLK_50MHZ       ;
+; LED_5              ; CLK_50MHZ  ; 8.215 ; 8.215 ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_TX        ; CLK_50MHZ  ; 8.962 ; 8.962 ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_TX        ; CLK_50MHZ  ; 9.127 ; 9.127 ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_TX        ; CLK_50MHZ  ; 8.606 ; 8.606 ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_TX        ; CLK_50MHZ  ; 8.777 ; 8.777 ; Rise       ; CLK_50MHZ       ;
+; UART_BT_TX         ; CLK_50MHZ  ; 8.000 ; 8.000 ; Rise       ; CLK_50MHZ       ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; nRESET     ; nRESET_AR1  ; 10.527 ;    ;    ; 10.527 ;
+; nRESET     ; nRESET_AR2  ; 11.171 ;    ;    ; 11.171 ;
+; nRESET     ; nRESET_AR3  ; 11.313 ;    ;    ; 11.313 ;
+; nRESET     ; nRESET_AR4  ; 11.196 ;    ;    ; 11.196 ;
++------------+-------------+--------+----+----+--------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; nRESET     ; nRESET_AR1  ; 10.527 ;    ;    ; 10.527 ;
+; nRESET     ; nRESET_AR2  ; 11.171 ;    ;    ; 11.171 ;
+; nRESET     ; nRESET_AR3  ; 11.313 ;    ;    ; 11.313 ;
+; nRESET     ; nRESET_AR4  ; 11.196 ;    ;    ; 11.196 ;
++------------+-------------+--------+----+----+--------+
+
+
++------------------------------------+
+; Fast Model Setup Summary           ;
++-----------+--------+---------------+
+; Clock     ; Slack  ; End Point TNS ;
++-----------+--------+---------------+
+; CLK_50MHZ ; 17.253 ; 0.000         ;
++-----------+--------+---------------+
+
+
++-----------------------------------+
+; Fast Model Hold Summary           ;
++-----------+-------+---------------+
+; Clock     ; Slack ; End Point TNS ;
++-----------+-------+---------------+
+; CLK_50MHZ ; 0.215 ; 0.000         ;
++-----------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-----------+-------+--------------------+
+; Clock     ; Slack ; End Point TNS      ;
++-----------+-------+--------------------+
+; CLK_50MHZ ; 9.000 ; 0.000              ;
++-----------+-------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CLK_50MHZ'                                                                                                                                                                                                      ;
++--------+----------------------------------------------------------------------------------------+------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                              ; To Node                                                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------------------------------------------------------+------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 17.253 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.773      ;
+; 17.253 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.773      ;
+; 17.308 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.013     ; 2.711      ;
+; 17.337 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.674      ;
+; 17.337 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.674      ;
+; 17.337 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.674      ;
+; 17.337 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.674      ;
+; 17.339 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.020     ; 2.673      ;
+; 17.339 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.020     ; 2.673      ;
+; 17.339 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.020     ; 2.673      ;
+; 17.339 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.020     ; 2.673      ;
+; 17.339 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.020     ; 2.673      ;
+; 17.339 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.020     ; 2.673      ;
+; 17.339 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.020     ; 2.673      ;
+; 17.339 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.020     ; 2.673      ;
+; 17.357 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.009     ; 2.666      ;
+; 17.357 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.009     ; 2.666      ;
+; 17.357 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][2] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.009     ; 2.666      ;
+; 17.357 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.009     ; 2.666      ;
+; 17.375 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 2.646      ;
+; 17.375 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 2.646      ;
+; 17.375 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 2.646      ;
+; 17.375 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 2.646      ;
+; 17.375 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 2.646      ;
+; 17.375 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 2.646      ;
+; 17.375 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 2.646      ;
+; 17.375 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.011     ; 2.646      ;
+; 17.385 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][4] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.652      ;
+; 17.385 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][4] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.652      ;
+; 17.385 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.652      ;
+; 17.385 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.652      ;
+; 17.385 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.652      ;
+; 17.385 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][7] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.652      ;
+; 17.385 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][7] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.652      ;
+; 17.385 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][7] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.652      ;
+; 17.385 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][7] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.652      ;
+; 17.425 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[0]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.029      ; 2.636      ;
+; 17.437 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.589      ;
+; 17.437 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.589      ;
+; 17.437 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.589      ;
+; 17.441 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][4] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.579      ;
+; 17.441 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][2] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.579      ;
+; 17.441 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][2] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.579      ;
+; 17.441 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][2] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.579      ;
+; 17.441 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[20][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.579      ;
+; 17.441 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[19][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.579      ;
+; 17.441 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[17][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.579      ;
+; 17.442 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.010     ; 2.580      ;
+; 17.446 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[3]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.029      ; 2.615      ;
+; 17.446 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[2]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.029      ; 2.615      ;
+; 17.446 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[7]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.029      ; 2.615      ;
+; 17.446 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[4]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.022     ; 2.564      ;
+; 17.446 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[4]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.022     ; 2.564      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[4]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.015      ; 2.595      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[5]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.015      ; 2.595      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[6]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.015      ; 2.595      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME[1]    ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.015      ; 2.595      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][4] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.568      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.568      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][2] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.568      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.568      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.568      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.568      ;
+; 17.452 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.012     ; 2.568      ;
+; 17.462 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[10]                                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.022     ; 2.548      ;
+; 17.462 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[10]                                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.022     ; 2.548      ;
+; 17.471 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.007     ; 2.554      ;
+; 17.471 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.007     ; 2.554      ;
+; 17.471 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.007     ; 2.554      ;
+; 17.471 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.007     ; 2.554      ;
+; 17.473 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.553      ;
+; 17.473 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.553      ;
+; 17.473 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.553      ;
+; 17.473 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.553      ;
+; 17.473 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.553      ;
+; 17.473 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.553      ;
+; 17.473 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.553      ;
+; 17.473 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[45][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.006     ; 2.553      ;
+; 17.480 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][4] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.004     ; 2.548      ;
+; 17.480 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.004     ; 2.548      ;
+; 17.480 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.004     ; 2.548      ;
+; 17.480 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][2] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.004     ; 2.548      ;
+; 17.480 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[6]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.004     ; 2.548      ;
+; 17.486 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[7]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][3] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.022     ; 2.524      ;
+; 17.486 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[7]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][1] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.022     ; 2.524      ;
+; 17.491 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[25][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.022     ; 2.519      ;
+; 17.491 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[29][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.022     ; 2.519      ;
+; 17.491 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[27][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.022     ; 2.519      ;
+; 17.491 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[31][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.022     ; 2.519      ;
+; 17.491 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][5] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.546      ;
+; 17.491 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][6] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.546      ;
+; 17.491 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][2] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.546      ;
+; 17.491 ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2]                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[18][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; 0.005      ; 2.546      ;
+; 17.493 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[35][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.518      ;
+; 17.493 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[37][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.518      ;
+; 17.493 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[33][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.518      ;
+; 17.493 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[39][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.518      ;
+; 17.493 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[47][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.518      ;
+; 17.493 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[43][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.518      ;
+; 17.493 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[41][0] ; CLK_50MHZ    ; CLK_50MHZ   ; 20.000       ; -0.021     ; 2.518      ;
++--------+----------------------------------------------------------------------------------------+------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'CLK_50MHZ'                                                                                                                                                                                                                                            ;
++-------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                                   ; To Node                                                                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; BRD_STATUS_LED_WORD[1]                                                                      ; BRD_STATUS_LED_WORD[1]                                                                      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; BRD_STATUS_LED_WORD[0]                                                                      ; BRD_STATUS_LED_WORD[0]                                                                      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE      ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE.IDLE                                       ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE.IDLE                                       ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TX_ACTIVE                                             ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TX_ACTIVE                                             ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE.START_RESPONSE                             ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE.START_RESPONSE                             ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE      ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0] ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0] ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TX_ACTIVE                                                ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TX_ACTIVE                                                ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.IDLE                                          ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.IDLE                                          ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0]                                  ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[50][0]                                  ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[4]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[5]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[6]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[3]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[2]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[1]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[0]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_FRAME[7]      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_1                         ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_1                         ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_4                         ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_4                         ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_2                         ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_2                         ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_SEND[1]                                      ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_SEND[1]                                      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_SEND[2]                                      ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_SEND[2]                                      ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE        ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[0]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[0]                                   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[1]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[1]                                   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[2]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[2]                                   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[3]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[3]                                   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[4]                                   ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|s_DISC_OUT_AR_LEVEL[4]                                   ; CLK_50MHZ    ; CLK_50MHZ   ; 0.000        ; 0.000      ; 0.367      ;
++-------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLK_50MHZ'                                                                                                               ;
++-------+--------------+----------------+------------------+-----------+------------+-----------------------------------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                                                                ;
++-------+--------------+----------------+------------------+-----------+------------+-----------------------------------------------------------------------+
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[0]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[0]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[10]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[10]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[11]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[11]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[12]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[12]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[13]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[13]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[14]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[14]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[15]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[15]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[16]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[16]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[17]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[17]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[18]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[18]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[19]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[19]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[1]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[1]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[20]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[20]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[21]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[21]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[22]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[22]                                              ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[2]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[2]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[3]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[3]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[4]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[4]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[5]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[5]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[6]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[6]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[7]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[7]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[8]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[8]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[9]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_COUNT[9]                                               ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[0]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[0]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[1]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[1]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[2]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[2]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[3]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[3]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[4]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[4]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[5]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; BRD_STATUS_LED_WORD[5]                                                ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_1_AR_D2_FF ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_1_AR_D2_FF ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_2_AR_D4_FF ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_2_AR_D4_FF ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_3_AR_D7_FF ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_3_AR_D7_FF ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[0] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[0] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[1] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[1] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[2] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE[2] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_1_AR_D8   ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_1_AR_D8   ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_2_AR_D12  ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_2_AR_D12  ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_3_AR_D13  ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_OUT_3_AR_D13  ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_1_AR_D2_FF ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_1_AR_D2_FF ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_2_AR_D4_FF ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_2_AR_D4_FF ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_3_AR_D7_FF ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_3_AR_D7_FF ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[0] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[0] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[1] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[1] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2] ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE[2] ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_1_AR_D8   ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_1_AR_D8   ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_2_AR_D12  ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_2_AR_D12  ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_3_AR_D13  ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_OUT_3_AR_D13  ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_1_AR_D2_FF ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_1_AR_D2_FF ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_2_AR_D4_FF ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_2_AR_D4_FF ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_3_AR_D7_FF ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; CLK_50MHZ ; Rise       ; DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_3_AR_D7_FF ;
++-------+--------------+----------------+------------------+-----------+------------+-----------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Setup Times                                                                    ;
++------------------+------------+--------+--------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------------+------------+--------+--------+------------+-----------------+
+; DISC_IN_1_AR1_D2 ; CLK_50MHZ  ; 2.196  ; 2.196  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR2_D2 ; CLK_50MHZ  ; 2.451  ; 2.451  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR3_D2 ; CLK_50MHZ  ; 2.392  ; 2.392  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR4_D2 ; CLK_50MHZ  ; 2.360  ; 2.360  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR1_D4 ; CLK_50MHZ  ; 2.207  ; 2.207  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR2_D4 ; CLK_50MHZ  ; -0.266 ; -0.266 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR3_D4 ; CLK_50MHZ  ; 2.398  ; 2.398  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR4_D4 ; CLK_50MHZ  ; -0.217 ; -0.217 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR1_D7 ; CLK_50MHZ  ; 2.261  ; 2.261  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR2_D7 ; CLK_50MHZ  ; 2.230  ; 2.230  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR3_D7 ; CLK_50MHZ  ; 2.353  ; 2.353  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR4_D7 ; CLK_50MHZ  ; 2.223  ; 2.223  ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_RX      ; CLK_50MHZ  ; 2.307  ; 2.307  ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_RX      ; CLK_50MHZ  ; 2.383  ; 2.383  ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_RX      ; CLK_50MHZ  ; 2.345  ; 2.345  ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_RX      ; CLK_50MHZ  ; 2.304  ; 2.304  ; Rise       ; CLK_50MHZ       ;
+; UART_BT_RX       ; CLK_50MHZ  ; 2.266  ; 2.266  ; Rise       ; CLK_50MHZ       ;
+; nRESET           ; CLK_50MHZ  ; 4.363  ; 4.363  ; Rise       ; CLK_50MHZ       ;
++------------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Hold Times                                                                     ;
++------------------+------------+--------+--------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------------+------------+--------+--------+------------+-----------------+
+; DISC_IN_1_AR1_D2 ; CLK_50MHZ  ; -1.960 ; -1.960 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR2_D2 ; CLK_50MHZ  ; -2.306 ; -2.306 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR3_D2 ; CLK_50MHZ  ; -2.272 ; -2.272 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR4_D2 ; CLK_50MHZ  ; -2.211 ; -2.211 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR1_D4 ; CLK_50MHZ  ; -1.956 ; -1.956 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR2_D4 ; CLK_50MHZ  ; 0.387  ; 0.387  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR3_D4 ; CLK_50MHZ  ; -2.278 ; -2.278 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR4_D4 ; CLK_50MHZ  ; 0.343  ; 0.343  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR1_D7 ; CLK_50MHZ  ; -2.024 ; -2.024 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR2_D7 ; CLK_50MHZ  ; -2.109 ; -2.109 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR3_D7 ; CLK_50MHZ  ; -2.232 ; -2.232 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR4_D7 ; CLK_50MHZ  ; -2.074 ; -2.074 ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_RX      ; CLK_50MHZ  ; -2.181 ; -2.181 ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_RX      ; CLK_50MHZ  ; -2.261 ; -2.261 ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_RX      ; CLK_50MHZ  ; -2.224 ; -2.224 ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_RX      ; CLK_50MHZ  ; -2.179 ; -2.179 ; Rise       ; CLK_50MHZ       ;
+; UART_BT_RX       ; CLK_50MHZ  ; -2.062 ; -2.062 ; Rise       ; CLK_50MHZ       ;
+; nRESET           ; CLK_50MHZ  ; -2.240 ; -2.240 ; Rise       ; CLK_50MHZ       ;
++------------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Clock to Output Times                                                          ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; DISC_OUT_1_AR1_D8  ; CLK_50MHZ  ; 4.065 ; 4.065 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR2_D8  ; CLK_50MHZ  ; 3.944 ; 3.944 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR3_D8  ; CLK_50MHZ  ; 3.677 ; 3.677 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR4_D8  ; CLK_50MHZ  ; 3.653 ; 3.653 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR1_D12 ; CLK_50MHZ  ; 3.707 ; 3.707 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR2_D12 ; CLK_50MHZ  ; 3.909 ; 3.909 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR3_D12 ; CLK_50MHZ  ; 3.753 ; 3.753 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR4_D12 ; CLK_50MHZ  ; 3.451 ; 3.451 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR1_D13 ; CLK_50MHZ  ; 3.857 ; 3.857 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR2_D13 ; CLK_50MHZ  ; 3.657 ; 3.657 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR3_D13 ; CLK_50MHZ  ; 3.572 ; 3.572 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR4_D13 ; CLK_50MHZ  ; 3.699 ; 3.699 ; Rise       ; CLK_50MHZ       ;
+; LED_2              ; CLK_50MHZ  ; 4.119 ; 4.119 ; Rise       ; CLK_50MHZ       ;
+; LED_4              ; CLK_50MHZ  ; 3.741 ; 3.741 ; Rise       ; CLK_50MHZ       ;
+; LED_5              ; CLK_50MHZ  ; 3.740 ; 3.740 ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_TX        ; CLK_50MHZ  ; 4.026 ; 4.026 ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_TX        ; CLK_50MHZ  ; 4.077 ; 4.077 ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_TX        ; CLK_50MHZ  ; 3.895 ; 3.895 ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_TX        ; CLK_50MHZ  ; 3.936 ; 3.936 ; Rise       ; CLK_50MHZ       ;
+; UART_BT_TX         ; CLK_50MHZ  ; 3.662 ; 3.662 ; Rise       ; CLK_50MHZ       ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                  ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; DISC_OUT_1_AR1_D8  ; CLK_50MHZ  ; 4.065 ; 4.065 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR2_D8  ; CLK_50MHZ  ; 3.944 ; 3.944 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR3_D8  ; CLK_50MHZ  ; 3.677 ; 3.677 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR4_D8  ; CLK_50MHZ  ; 3.653 ; 3.653 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR1_D12 ; CLK_50MHZ  ; 3.707 ; 3.707 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR2_D12 ; CLK_50MHZ  ; 3.909 ; 3.909 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR3_D12 ; CLK_50MHZ  ; 3.753 ; 3.753 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR4_D12 ; CLK_50MHZ  ; 3.451 ; 3.451 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR1_D13 ; CLK_50MHZ  ; 3.857 ; 3.857 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR2_D13 ; CLK_50MHZ  ; 3.657 ; 3.657 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR3_D13 ; CLK_50MHZ  ; 3.572 ; 3.572 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR4_D13 ; CLK_50MHZ  ; 3.699 ; 3.699 ; Rise       ; CLK_50MHZ       ;
+; LED_2              ; CLK_50MHZ  ; 4.119 ; 4.119 ; Rise       ; CLK_50MHZ       ;
+; LED_4              ; CLK_50MHZ  ; 3.741 ; 3.741 ; Rise       ; CLK_50MHZ       ;
+; LED_5              ; CLK_50MHZ  ; 3.740 ; 3.740 ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_TX        ; CLK_50MHZ  ; 4.026 ; 4.026 ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_TX        ; CLK_50MHZ  ; 4.077 ; 4.077 ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_TX        ; CLK_50MHZ  ; 3.895 ; 3.895 ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_TX        ; CLK_50MHZ  ; 3.936 ; 3.936 ; Rise       ; CLK_50MHZ       ;
+; UART_BT_TX         ; CLK_50MHZ  ; 3.662 ; 3.662 ; Rise       ; CLK_50MHZ       ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; nRESET     ; nRESET_AR1  ; 5.141 ;    ;    ; 5.141 ;
+; nRESET     ; nRESET_AR2  ; 5.404 ;    ;    ; 5.404 ;
+; nRESET     ; nRESET_AR3  ; 5.367 ;    ;    ; 5.367 ;
+; nRESET     ; nRESET_AR4  ; 5.317 ;    ;    ; 5.317 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; nRESET     ; nRESET_AR1  ; 5.141 ;    ;    ; 5.141 ;
+; nRESET     ; nRESET_AR2  ; 5.404 ;    ;    ; 5.404 ;
+; nRESET     ; nRESET_AR3  ; 5.367 ;    ;    ; 5.367 ;
+; nRESET     ; nRESET_AR4  ; 5.317 ;    ;    ; 5.317 ;
++------------+-------------+-------+----+----+-------+
+
+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; 11.744 ; 0.215 ; N/A      ; N/A     ; 8.758               ;
+;  CLK_50MHZ       ; 11.744 ; 0.215 ; N/A      ; N/A     ; 8.758               ;
+; Design-wide TNS  ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  CLK_50MHZ       ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
++------------------+--------+-------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------------------------+
+; Setup Times                                                                    ;
++------------------+------------+--------+--------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------------+------------+--------+--------+------------+-----------------+
+; DISC_IN_1_AR1_D2 ; CLK_50MHZ  ; 5.000  ; 5.000  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR2_D2 ; CLK_50MHZ  ; 5.517  ; 5.517  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR3_D2 ; CLK_50MHZ  ; 5.362  ; 5.362  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR4_D2 ; CLK_50MHZ  ; 5.250  ; 5.250  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR1_D4 ; CLK_50MHZ  ; 5.044  ; 5.044  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR2_D4 ; CLK_50MHZ  ; 0.200  ; 0.200  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR3_D4 ; CLK_50MHZ  ; 5.350  ; 5.350  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR4_D4 ; CLK_50MHZ  ; 0.532  ; 0.532  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR1_D7 ; CLK_50MHZ  ; 5.115  ; 5.115  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR2_D7 ; CLK_50MHZ  ; 4.803  ; 4.803  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR3_D7 ; CLK_50MHZ  ; 5.300  ; 5.300  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR4_D7 ; CLK_50MHZ  ; 4.846  ; 4.846  ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_RX      ; CLK_50MHZ  ; 5.377  ; 5.377  ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_RX      ; CLK_50MHZ  ; 5.284  ; 5.284  ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_RX      ; CLK_50MHZ  ; 5.284  ; 5.284  ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_RX      ; CLK_50MHZ  ; 5.320  ; 5.320  ; Rise       ; CLK_50MHZ       ;
+; UART_BT_RX       ; CLK_50MHZ  ; 5.137  ; 5.137  ; Rise       ; CLK_50MHZ       ;
+; nRESET           ; CLK_50MHZ  ; 11.269 ; 11.269 ; Rise       ; CLK_50MHZ       ;
++------------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Hold Times                                                                     ;
++------------------+------------+--------+--------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------------+------------+--------+--------+------------+-----------------+
+; DISC_IN_1_AR1_D2 ; CLK_50MHZ  ; -1.960 ; -1.960 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR2_D2 ; CLK_50MHZ  ; -2.306 ; -2.306 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR3_D2 ; CLK_50MHZ  ; -2.272 ; -2.272 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_1_AR4_D2 ; CLK_50MHZ  ; -2.211 ; -2.211 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR1_D4 ; CLK_50MHZ  ; -1.956 ; -1.956 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR2_D4 ; CLK_50MHZ  ; 0.387  ; 0.387  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR3_D4 ; CLK_50MHZ  ; -2.278 ; -2.278 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_2_AR4_D4 ; CLK_50MHZ  ; 0.343  ; 0.343  ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR1_D7 ; CLK_50MHZ  ; -2.024 ; -2.024 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR2_D7 ; CLK_50MHZ  ; -2.109 ; -2.109 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR3_D7 ; CLK_50MHZ  ; -2.232 ; -2.232 ; Rise       ; CLK_50MHZ       ;
+; DISC_IN_3_AR4_D7 ; CLK_50MHZ  ; -2.074 ; -2.074 ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_RX      ; CLK_50MHZ  ; -2.181 ; -2.181 ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_RX      ; CLK_50MHZ  ; -2.261 ; -2.261 ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_RX      ; CLK_50MHZ  ; -2.224 ; -2.224 ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_RX      ; CLK_50MHZ  ; -2.179 ; -2.179 ; Rise       ; CLK_50MHZ       ;
+; UART_BT_RX       ; CLK_50MHZ  ; -2.062 ; -2.062 ; Rise       ; CLK_50MHZ       ;
+; nRESET           ; CLK_50MHZ  ; -2.240 ; -2.240 ; Rise       ; CLK_50MHZ       ;
++------------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Clock to Output Times                                                          ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; DISC_OUT_1_AR1_D8  ; CLK_50MHZ  ; 8.993 ; 8.993 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR2_D8  ; CLK_50MHZ  ; 9.045 ; 9.045 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR3_D8  ; CLK_50MHZ  ; 8.001 ; 8.001 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR4_D8  ; CLK_50MHZ  ; 8.212 ; 8.212 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR1_D12 ; CLK_50MHZ  ; 8.064 ; 8.064 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR2_D12 ; CLK_50MHZ  ; 9.003 ; 9.003 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR3_D12 ; CLK_50MHZ  ; 8.121 ; 8.121 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR4_D12 ; CLK_50MHZ  ; 7.499 ; 7.499 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR1_D13 ; CLK_50MHZ  ; 8.473 ; 8.473 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR2_D13 ; CLK_50MHZ  ; 8.206 ; 8.206 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR3_D13 ; CLK_50MHZ  ; 7.646 ; 7.646 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR4_D13 ; CLK_50MHZ  ; 8.081 ; 8.081 ; Rise       ; CLK_50MHZ       ;
+; LED_2              ; CLK_50MHZ  ; 9.504 ; 9.504 ; Rise       ; CLK_50MHZ       ;
+; LED_4              ; CLK_50MHZ  ; 8.208 ; 8.208 ; Rise       ; CLK_50MHZ       ;
+; LED_5              ; CLK_50MHZ  ; 8.215 ; 8.215 ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_TX        ; CLK_50MHZ  ; 8.962 ; 8.962 ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_TX        ; CLK_50MHZ  ; 9.127 ; 9.127 ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_TX        ; CLK_50MHZ  ; 8.606 ; 8.606 ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_TX        ; CLK_50MHZ  ; 8.777 ; 8.777 ; Rise       ; CLK_50MHZ       ;
+; UART_BT_TX         ; CLK_50MHZ  ; 8.000 ; 8.000 ; Rise       ; CLK_50MHZ       ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                  ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; DISC_OUT_1_AR1_D8  ; CLK_50MHZ  ; 4.065 ; 4.065 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR2_D8  ; CLK_50MHZ  ; 3.944 ; 3.944 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR3_D8  ; CLK_50MHZ  ; 3.677 ; 3.677 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_1_AR4_D8  ; CLK_50MHZ  ; 3.653 ; 3.653 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR1_D12 ; CLK_50MHZ  ; 3.707 ; 3.707 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR2_D12 ; CLK_50MHZ  ; 3.909 ; 3.909 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR3_D12 ; CLK_50MHZ  ; 3.753 ; 3.753 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_2_AR4_D12 ; CLK_50MHZ  ; 3.451 ; 3.451 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR1_D13 ; CLK_50MHZ  ; 3.857 ; 3.857 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR2_D13 ; CLK_50MHZ  ; 3.657 ; 3.657 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR3_D13 ; CLK_50MHZ  ; 3.572 ; 3.572 ; Rise       ; CLK_50MHZ       ;
+; DISC_OUT_3_AR4_D13 ; CLK_50MHZ  ; 3.699 ; 3.699 ; Rise       ; CLK_50MHZ       ;
+; LED_2              ; CLK_50MHZ  ; 4.119 ; 4.119 ; Rise       ; CLK_50MHZ       ;
+; LED_4              ; CLK_50MHZ  ; 3.741 ; 3.741 ; Rise       ; CLK_50MHZ       ;
+; LED_5              ; CLK_50MHZ  ; 3.740 ; 3.740 ; Rise       ; CLK_50MHZ       ;
+; UART_AR1_TX        ; CLK_50MHZ  ; 4.026 ; 4.026 ; Rise       ; CLK_50MHZ       ;
+; UART_AR2_TX        ; CLK_50MHZ  ; 4.077 ; 4.077 ; Rise       ; CLK_50MHZ       ;
+; UART_AR3_TX        ; CLK_50MHZ  ; 3.895 ; 3.895 ; Rise       ; CLK_50MHZ       ;
+; UART_AR4_TX        ; CLK_50MHZ  ; 3.936 ; 3.936 ; Rise       ; CLK_50MHZ       ;
+; UART_BT_TX         ; CLK_50MHZ  ; 3.662 ; 3.662 ; Rise       ; CLK_50MHZ       ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------+
+; Progagation Delay                                    ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; nRESET     ; nRESET_AR1  ; 10.527 ;    ;    ; 10.527 ;
+; nRESET     ; nRESET_AR2  ; 11.171 ;    ;    ; 11.171 ;
+; nRESET     ; nRESET_AR3  ; 11.313 ;    ;    ; 11.313 ;
+; nRESET     ; nRESET_AR4  ; 11.196 ;    ;    ; 11.196 ;
++------------+-------------+--------+----+----+--------+
+
+
++----------------------------------------------------+
+; Minimum Progagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; nRESET     ; nRESET_AR1  ; 5.141 ;    ;    ; 5.141 ;
+; nRESET     ; nRESET_AR2  ; 5.404 ;    ;    ; 5.404 ;
+; nRESET     ; nRESET_AR3  ; 5.367 ;    ;    ; 5.367 ;
+; nRESET     ; nRESET_AR4  ; 5.317 ;    ;    ; 5.317 ;
++------------+-------------+-------+----+----+-------+
+
+
++--------------------------------------------------------------------+
+; Setup Transfers                                                    ;
++------------+-----------+----------+----------+----------+----------+
+; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-----------+----------+----------+----------+----------+
+; CLK_50MHZ  ; CLK_50MHZ ; 7452     ; 0        ; 0        ; 0        ;
++------------+-----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------------------------------------------+
+; Hold Transfers                                                     ;
++------------+-----------+----------+----------+----------+----------+
+; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-----------+----------+----------+----------+----------+
+; CLK_50MHZ  ; CLK_50MHZ ; 7452     ; 0        ; 0        ; 0        ;
++------------+-----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 18    ; 18   ;
+; Unconstrained Input Port Paths  ; 511   ; 511  ;
+; Unconstrained Output Ports      ; 24    ; 24   ;
+; Unconstrained Output Port Paths ; 24    ; 24   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Jul 30 23:40:28 2018
+Info: Command: quartus_sta FPGA_MAIN_MODULE -c FPGA_MAIN_MODULE
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'FPGA_MAIN_MODULE.sdc'
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 11.744
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    11.744         0.000 CLK_50MHZ 
+Info (332146): Worst-case hold slack is 0.499
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.499         0.000 CLK_50MHZ 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 8.758
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     8.758         0.000 CLK_50MHZ 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 17.253
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    17.253         0.000 CLK_50MHZ 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 CLK_50MHZ 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 9.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     9.000         0.000 CLK_50MHZ 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4551 megabytes
+    Info: Processing ended: Mon Jul 30 23:40:30 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

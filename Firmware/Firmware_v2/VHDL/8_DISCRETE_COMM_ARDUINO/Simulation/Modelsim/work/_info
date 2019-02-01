@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1
+Ediscrete_comm_arduino
+Z0 w1502223895
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dJ:\Dropbox\Doctorado\FPGA\VHDL\8_DISCRETE_COMM_ARDUINO\Simulation\Modelsim
+Z5 8../../Source/DISCRETE_COMM_ARDUINO.vhd
+Z6 F../../Source/DISCRETE_COMM_ARDUINO.vhd
+l0
+L15
+V@R?ZJCj[WjXIS5g[8^?gA2
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1503590317.666000
+Z9 !s90 -reportprogress|300|../../Source/DISCRETE_COMM_ARDUINO.vhd|
+Z10 !s107 ../../Source/DISCRETE_COMM_ARDUINO.vhd|
+o-O0
+Z11 tExplicit 1
+!s100 ^1ci?iHROM:bH>N=AI;0O3
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 21 discrete_comm_arduino 0 22 @R?ZJCj[WjXIS5g[8^?gA2
+l48
+L32
+Vnc7aXfT:?VIlAcfC@:gWN2
+!s100 zgAfFP<n;ZE_5deKP@zVL3
+R7
+32
+R8
+R9
+R10
+o-O0
+R11
+!i10b 1
+Ediscrete_comm_arduino_tb
+Z12 w1503590311
+Z13 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R1
+R2
+R3
+R4
+Z14 8../../Simulation/DISCRETE_COMM_ARDUINO_TB.vhd
+Z15 F../../Simulation/DISCRETE_COMM_ARDUINO_TB.vhd
+l0
+L17
+Vam1ejFjGK5[AZ2ib`k61@2
+!s100 zmNbojmij7E7>T@HjTOh]0
+R7
+32
+!i10b 1
+Z16 !s108 1503590317.997000
+Z17 !s90 -reportprogress|300|../../Simulation/DISCRETE_COMM_ARDUINO_TB.vhd|
+Z18 !s107 ../../Simulation/DISCRETE_COMM_ARDUINO_TB.vhd|
+o-O0
+R11
+Abhv
+R13
+R1
+R2
+R3
+DEx4 work 24 discrete_comm_arduino_tb 0 22 am1ejFjGK5[AZ2ib`k61@2
+l72
+L21
+VWYLBVdDzV[J_9EFaP;QgF1
+!s100 ?kCI6Q1W4n7B:E?o^H^RI2
+R7
+32
+!i10b 1
+R16
+R17
+R18
+o-O0
+R11
