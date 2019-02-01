@@ -1,7 +1,0 @@
-PowerPlay Early Power Estimator File Generator Status : Successful - Sun Aug 20 23:07:52 2017
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
-Revision Name : FPGA_MAIN_MODULE
-Top-level Entity Name : FPGA_MAIN_MODULE
-Family : Cyclone II
-Device : EP2C5T144C8
-Power Estimation Confidence : Low: user provided insufficient toggle rate data
