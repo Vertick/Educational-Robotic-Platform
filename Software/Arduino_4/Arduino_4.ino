@@ -6,12 +6,12 @@
 /* Second version 1.1 - 31/01/2019                                                                */
 /**************************************************************************************************/
 
-const int INPUT_1 =  2;// INPUT_1 set to D2 pin
-const int INPUT_2 =  4;// INPUT_2 set to D4 pin
-const int INPUT_3 =  7;// INPUT_3 set to D7 pin
-const int OUTPUT_1 =  8;// OUTPUT_1 set to D8 pin
-const int OUTPUT_2 =  12;// OUTPUT_2 set to D12 pin
-const int OUTPUT_3 =  13;// OUTPUT_3 set to D13 pin
+const int OUTPUT_1 =  2;// OUTPUT_1 set to D2 pin
+const int OUTPUT_2 =  4;// OUTPUT_2 set to D4 pin
+const int OUTPUT_3 =  7;// OUTPUT_3 set to D7 pin
+const int INPUT_1  =  8;// INPUT_1 set to D8 pin
+const int INPUT_2  =  12;// INPUT_2 set to D12 pin
+const int INPUT_3  =  13;// INPUT_3 set to D13 pin
 
 const int ARDUINO_ID = 4;// Arduino identifier
 int initialized = 0; // Variable to detect the start-up
