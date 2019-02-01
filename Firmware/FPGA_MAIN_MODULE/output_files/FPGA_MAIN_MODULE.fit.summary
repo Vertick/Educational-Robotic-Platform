@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Aug 20 23:10:43 2017
+Fitter Status : Successful - Mon Sep 18 21:54:32 2017
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : FPGA_MAIN_MODULE
 Top-level Entity Name : FPGA_MAIN_MODULE
 Family : Cyclone II
 Device : EP2C5T144C8
 Timing Models : Final
-Total logic elements : 3,040 / 4,608 ( 66 % )
-    Total combinational functions : 2,801 / 4,608 ( 61 % )
+Total logic elements : 3,044 / 4,608 ( 66 % )
+    Total combinational functions : 2,805 / 4,608 ( 61 % )
     Dedicated logic registers : 2,026 / 4,608 ( 44 % )
 Total registers : 2026
 Total pins : 86 / 89 ( 97 % )

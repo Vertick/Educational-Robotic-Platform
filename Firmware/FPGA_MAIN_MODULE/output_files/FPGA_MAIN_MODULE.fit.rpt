@@ -1,5 +1,5 @@
 Fitter report for FPGA_MAIN_MODULE
-Sun Aug 20 23:10:43 2017
+Mon Sep 18 21:54:32 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -62,15 +62,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sun Aug 20 23:10:43 2017           ;
+; Fitter Status                      ; Successful - Mon Sep 18 21:54:32 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; FPGA_MAIN_MODULE                                ;
 ; Top-level Entity Name              ; FPGA_MAIN_MODULE                                ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C5T144C8                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 3,040 / 4,608 ( 66 % )                          ;
-;     Total combinational functions  ; 2,801 / 4,608 ( 61 % )                          ;
+; Total logic elements               ; 3,044 / 4,608 ( 66 % )                          ;
+;     Total combinational functions  ; 2,805 / 4,608 ( 61 % )                          ;
 ;     Dedicated logic registers      ; 2,026 / 4,608 ( 44 % )                          ;
 ; Total registers                    ; 2026                                            ;
 ; Total pins                         ; 86 / 89 ( 97 % )                                ;
@@ -149,8 +149,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 4917 ( 0.00 % )    ;
-;     -- Achieved     ; 0 / 4917 ( 0.00 % )    ;
+;     -- Requested    ; 0 / 4922 ( 0.00 % )    ;
+;     -- Achieved     ; 0 / 4922 ( 0.00 % )    ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -173,7 +173,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 4914    ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 4919    ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -181,7 +181,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/output_files/FPGA_MAIN_MODULE.pin.
+The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/Firmware_v2/FPGA_MAIN_MODULE/output_files/FPGA_MAIN_MODULE.pin.
 
 
 +----------------------------------------------------------------------+
@@ -189,19 +189,19 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 3,040 / 4,608 ( 66 % ) ;
-;     -- Combinational with no register       ; 1014                   ;
+; Total logic elements                        ; 3,044 / 4,608 ( 66 % ) ;
+;     -- Combinational with no register       ; 1018                   ;
 ;     -- Register only                        ; 239                    ;
 ;     -- Combinational with a register        ; 1787                   ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 1199                   ;
-;     -- 3 input functions                    ; 225                    ;
-;     -- <=2 input functions                  ; 1377                   ;
+;     -- 4 input functions                    ; 1198                   ;
+;     -- 3 input functions                    ; 224                    ;
+;     -- <=2 input functions                  ; 1383                   ;
 ;     -- Register only                        ; 239                    ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 2466                   ;
+;     -- normal mode                          ; 2470                   ;
 ;     -- arithmetic mode                      ; 335                    ;
 ;                                             ;                        ;
 ; Total registers*                            ; 2,026 / 4,851 ( 42 % ) ;
@@ -224,10 +224,10 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 10% / 10% / 10%        ;
-; Peak interconnect usage (total/H/V)         ; 10% / 10% / 11%        ;
+; Peak interconnect usage (total/H/V)         ; 13% / 13% / 14%        ;
 ; Maximum fan-out                             ; 2026                   ;
-; Highest non-global fan-out                  ; 1553                   ;
-; Total fan-out                               ; 14009                  ;
+; Highest non-global fan-out                  ; 1542                   ;
+; Total fan-out                               ; 14001                  ;
 ; Average fan-out                             ; 2.75                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -241,19 +241,19 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 3040 / 4608 ( 66 % ) ; 0 / 4608 ( 0 % )               ;
-;     -- Combinational with no register       ; 1014                 ; 0                              ;
+; Total logic elements                        ; 3044 / 4608 ( 66 % ) ; 0 / 4608 ( 0 % )               ;
+;     -- Combinational with no register       ; 1018                 ; 0                              ;
 ;     -- Register only                        ; 239                  ; 0                              ;
 ;     -- Combinational with a register        ; 1787                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 1199                 ; 0                              ;
-;     -- 3 input functions                    ; 225                  ; 0                              ;
-;     -- <=2 input functions                  ; 1377                 ; 0                              ;
+;     -- 4 input functions                    ; 1198                 ; 0                              ;
+;     -- 3 input functions                    ; 224                  ; 0                              ;
+;     -- <=2 input functions                  ; 1383                 ; 0                              ;
 ;     -- Register only                        ; 239                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 2466                 ; 0                              ;
+;     -- normal mode                          ; 2470                 ; 0                              ;
 ;     -- arithmetic mode                      ; 335                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 2026                 ; 0                              ;
@@ -275,16 +275,16 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 14009                ; 0                              ;
-;     -- Registered Connections               ; 4640                 ; 0                              ;
+;     -- Total Connections                    ; 14001                ; 0                              ;
+;     -- Registered Connections               ; 4643                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
 ;     -- hard_block:auto_generated_inst       ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
-;     -- Input Ports                          ; 56                   ; 0                              ;
-;     -- Output Ports                         ; 30                   ; 0                              ;
+;     -- Input Ports                          ; 52                   ; 0                              ;
+;     -- Output Ports                         ; 34                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Registered Ports                            ;                      ;                                ;
@@ -310,12 +310,12 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 +------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; CLK_50MHZ        ; 17    ; 1        ; 0            ; 6            ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; DISC_IN_1_AR1_D2 ; 43    ; 4        ; 3            ; 0            ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; DISC_IN_1_AR2_D2 ; 60    ; 4        ; 14           ; 0            ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; DISC_IN_1_AR2_D2 ; 40    ; 4        ; 1            ; 0            ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; DISC_IN_1_AR3_D2 ; 115   ; 2        ; 24           ; 14           ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; DISC_IN_1_AR4_D2 ; 4     ; 1        ; 0            ; 13           ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; DISC_IN_1_SH_D2  ; 65    ; 4        ; 21           ; 0            ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; DISC_IN_2_AR1_D4 ; 45    ; 4        ; 3            ; 0            ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; DISC_IN_2_AR2_D4 ; 80    ; 3        ; 28           ; 5            ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; DISC_IN_2_AR2_D4 ; 88    ; 3        ; 28           ; 7            ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; DISC_IN_2_AR3_D4 ; 119   ; 2        ; 21           ; 14           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; DISC_IN_2_AR4_D4 ; 18    ; 1        ; 0            ; 6            ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; DISC_IN_2_SH_D4  ; 69    ; 4        ; 26           ; 0            ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -329,7 +329,7 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ; PWM_1_AR3_D3     ; 118   ; 2        ; 21           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PWM_1_AR4_D3     ; 8     ; 1        ; 0            ; 11           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PWM_2_AR1_D5     ; 47    ; 4        ; 5            ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; PWM_2_AR2_D5     ; 81    ; 3        ; 28           ; 5            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; PWM_2_AR2_D5     ; 112   ; 2        ; 26           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PWM_2_AR3_D5     ; 120   ; 2        ; 19           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PWM_2_AR4_D5     ; 22    ; 1        ; 0            ; 6            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PWM_3_AR1_D6     ; 48    ; 4        ; 5            ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -354,16 +354,12 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ; UART_AR4_RX      ; 143   ; 2        ; 1            ; 14           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; UART_BT_RX       ; 104   ; 3        ; 28           ; 12           ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; UART_SH_RX       ; 64    ; 4        ; 21           ; 0            ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; USER_IO_112      ; 112   ; 2        ; 26           ; 14           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; USER_IO_135      ; 135   ; 2        ; 3            ; 14           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; USER_IO_137      ; 137   ; 2        ; 3            ; 14           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; USER_IO_139      ; 139   ; 2        ; 3            ; 14           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; USER_IO_141      ; 141   ; 2        ; 1            ; 14           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; USER_IO_31       ; 31    ; 1        ; 0            ; 2            ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; USER_IO_40       ; 40    ; 4        ; 1            ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; USER_IO_88       ; 88    ; 3        ; 28           ; 7            ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; USER_IO_94       ; 94    ; 3        ; 28           ; 9            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; nRESET           ; 144   ; 2        ; 1            ; 14           ; 3           ; 1553                  ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; USER_IO_80       ; 80    ; 3        ; 28           ; 5            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; USER_IO_81       ; 81    ; 3        ; 28           ; 5            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; nRESET           ; 144   ; 2        ; 1            ; 14           ; 3           ; 1542                  ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -402,6 +398,10 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ; UART_AR4_TX        ; 142   ; 2        ; 1            ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; UART_BT_TX         ; 103   ; 3        ; 28           ; 12           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; UART_SH_TX         ; 63    ; 4        ; 19           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; nRESET_AR1         ; 31    ; 1        ; 0            ; 2            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; nRESET_AR2         ; 60    ; 4        ; 14           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; nRESET_AR3         ; 94    ; 3        ; 28           ; 9            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; nRESET_AR4         ; 135   ; 2        ; 3            ; 14           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 +--------------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
@@ -452,7 +452,7 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ; 28       ; 32         ; 1        ; DISC_OUT_2_AR4_D12                       ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 29       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 30       ; 40         ; 1        ; PWM_6_AR4_D11                            ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; 31       ; 41         ; 1        ; USER_IO_31                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 31       ; 41         ; 1        ; nRESET_AR1                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 32       ; 42         ; 1        ; DISC_OUT_3_AR4_D13                       ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 33       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 34       ;            ;          ; GND_PLL1                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -461,7 +461,7 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ; 37       ;            ;          ; VCCA_PLL1                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 38       ;            ;          ; GNDA_PLL1                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 39       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 40       ; 43         ; 4        ; USER_IO_40                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 40       ; 43         ; 4        ; DISC_IN_1_AR2_D2                         ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 41       ; 44         ; 4        ; UART_AR1_TX                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 42       ; 45         ; 4        ; UART_AR1_RX                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 43       ; 46         ; 4        ; DISC_IN_1_AR1_D2                         ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -481,7 +481,7 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ; 57       ; 59         ; 4        ; PWM_6_AR1_D11                            ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 58       ; 60         ; 4        ; DISC_OUT_2_AR1_D12                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 59       ; 63         ; 4        ; DISC_OUT_3_AR1_D13                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 60       ; 64         ; 4        ; DISC_IN_1_AR2_D2                         ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 60       ; 64         ; 4        ; nRESET_AR2                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 61       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 62       ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 63       ; 72         ; 4        ; UART_SH_TX                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -501,21 +501,21 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ; 77       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 78       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 79       ; 95         ; 3        ; PWM_1_AR2_D3                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; 80       ; 97         ; 3        ; DISC_IN_2_AR2_D4                         ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; 81       ; 98         ; 3        ; PWM_2_AR2_D5                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 80       ; 97         ; 3        ; USER_IO_80                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 81       ; 98         ; 3        ; USER_IO_81                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 82       ; 99         ; 3        ; ^nSTATUS                                 ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 83       ; 100        ; 3        ; ^CONF_DONE                               ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 84       ; 101        ; 3        ; ^MSEL1                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 85       ; 102        ; 3        ; ^MSEL0                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 86       ; 103        ; 3        ; PWM_3_AR2_D6                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 87       ; 104        ; 3        ; DISC_IN_3_AR2_D7                         ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; 88       ; 105        ; 3        ; USER_IO_88                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 88       ; 105        ; 3        ; DISC_IN_2_AR2_D4                         ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 89       ; 106        ; 3        ; PWM_4_AR2_D9                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 90       ; 107        ; 3        ; PWM_5_AR2_D10                            ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 91       ; 108        ; 3        ; PWM_6_AR2_D11                            ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 92       ; 109        ; 3        ; DISC_OUT_2_AR2_D12                       ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 93       ; 110        ; 3        ; DISC_OUT_3_AR2_D13                       ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; 94       ; 111        ; 3        ; USER_IO_94                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 94       ; 111        ; 3        ; nRESET_AR3                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 95       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 96       ; 112        ; 3        ; DISC_OUT_1_SH_D8                         ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 97       ; 113        ; 3        ; PWM_4_SH_D9                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -533,7 +533,7 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ; 109      ;            ;          ; VCCA_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 110      ;            ;          ; GNDA_PLL2                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 111      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 112      ; 127        ; 2        ; USER_IO_112                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 112      ; 127        ; 2        ; PWM_2_AR2_D5                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 113      ; 128        ; 2        ; UART_AR3_TX                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 114      ; 129        ; 2        ; UART_AR3_RX                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 115      ; 130        ; 2        ; DISC_IN_1_AR3_D2                         ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -556,7 +556,7 @@ The pin-out file can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/outp
 ; 132      ; 153        ; 2        ; PWM_6_AR3_D11                            ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 133      ; 154        ; 2        ; DISC_OUT_2_AR3_D12                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 134      ; 155        ; 2        ; DISC_OUT_3_AR3_D13                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 135      ; 162        ; 2        ; USER_IO_135                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 135      ; 162        ; 2        ; nRESET_AR4                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 136      ; 163        ; 2        ; DISC_OUT_3_SH_D13                        ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 137      ; 164        ; 2        ; USER_IO_137                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 138      ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -612,13 +612,13 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                       ; Library Name ;
 +-----------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------+--------------+
-; |FPGA_MAIN_MODULE                                         ; 3040 (64)   ; 2026 (29)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 86   ; 0            ; 1014 (35)    ; 239 (0)           ; 1787 (29)        ; |FPGA_MAIN_MODULE                                                                         ; work         ;
+; |FPGA_MAIN_MODULE                                         ; 3044 (63)   ; 2026 (29)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 86   ; 0            ; 1018 (34)    ; 239 (0)           ; 1787 (29)        ; |FPGA_MAIN_MODULE                                                                         ; work         ;
 ;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|   ; 9 (9)       ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 9 (9)            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1                      ; work         ;
 ;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|   ; 9 (9)       ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 9 (9)            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2                      ; work         ;
 ;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|   ; 9 (9)       ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 9 (9)            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3                      ; work         ;
 ;    |DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4|   ; 9 (9)       ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 9 (9)            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4                      ; work         ;
 ;    |DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|       ; 15 (15)     ; 15 (15)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 9 (9)            ; |FPGA_MAIN_MODULE|DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD                          ; work         ;
-;    |MAIN_PROCESSOR:INST_MAIN_PROCESSOR|                   ; 1451 (1451) ; 971 (971)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 480 (480)    ; 35 (35)           ; 936 (936)        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR                                      ; work         ;
+;    |MAIN_PROCESSOR:INST_MAIN_PROCESSOR|                   ; 1456 (1456) ; 971 (971)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 485 (485)    ; 35 (35)           ; 936 (936)        ; |FPGA_MAIN_MODULE|MAIN_PROCESSOR:INST_MAIN_PROCESSOR                                      ; work         ;
 ;    |PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1| ; 226 (226)   ; 184 (184)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 42 (42)      ; 48 (48)           ; 136 (136)        ; |FPGA_MAIN_MODULE|PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1                    ; work         ;
 ;    |PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2| ; 204 (204)   ; 168 (168)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 36 (36)      ; 48 (48)           ; 120 (120)        ; |FPGA_MAIN_MODULE|PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2                    ; work         ;
 ;    |PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3| ; 204 (204)   ; 168 (168)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 36 (36)      ; 48 (48)           ; 120 (120)        ; |FPGA_MAIN_MODULE|PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3                    ; work         ;
@@ -650,6 +650,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+----------+---------------+---------------+-----------------------+-----+
 ; Name               ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
 +--------------------+----------+---------------+---------------+-----------------------+-----+
+; nRESET_AR1         ; Output   ; --            ; --            ; --                    ; --  ;
+; nRESET_AR2         ; Output   ; --            ; --            ; --                    ; --  ;
+; nRESET_AR3         ; Output   ; --            ; --            ; --                    ; --  ;
+; nRESET_AR4         ; Output   ; --            ; --            ; --                    ; --  ;
 ; LED_2              ; Output   ; --            ; --            ; --                    ; --  ;
 ; LED_4              ; Output   ; --            ; --            ; --                    ; --  ;
 ; LED_5              ; Output   ; --            ; --            ; --                    ; --  ;
@@ -680,22 +684,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DISC_OUT_1_AR4_D8  ; Output   ; --            ; --            ; --                    ; --  ;
 ; DISC_OUT_2_AR4_D12 ; Output   ; --            ; --            ; --                    ; --  ;
 ; DISC_OUT_3_AR4_D13 ; Output   ; --            ; --            ; --                    ; --  ;
-; USER_IO_31         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; USER_IO_40         ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; USER_IO_88         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; USER_IO_94         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; USER_IO_112        ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; USER_IO_135        ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; USER_IO_80         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; USER_IO_81         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; USER_IO_137        ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; USER_IO_139        ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; USER_IO_141        ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; CLK_50MHZ          ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; nRESET             ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; CLK_50MHZ          ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; DISC_IN_1_AR1_D2   ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; DISC_IN_2_AR1_D4   ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; DISC_IN_3_AR1_D7   ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; DISC_IN_1_AR2_D2   ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
-; DISC_IN_2_AR2_D4   ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; DISC_IN_2_AR2_D4   ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; DISC_IN_3_AR2_D7   ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; DISC_IN_1_AR3_D2   ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; DISC_IN_2_AR3_D4   ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
@@ -713,7 +713,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; UART_SH_RX         ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; UART_BT_RX         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; PWM_2_AR4_D5       ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; PWM_2_AR2_D5       ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; PWM_2_AR2_D5       ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; PWM_1_AR4_D3       ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; PWM_3_AR2_D6       ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; PWM_2_AR3_D5       ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
@@ -744,16 +744,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                                                                                  ; Pad To Core Index ; Setting ;
 +------------------------------------------------------------------------------------------------------+-------------------+---------+
-; USER_IO_31                                                                                           ;                   ;         ;
-; USER_IO_40                                                                                           ;                   ;         ;
-; USER_IO_88                                                                                           ;                   ;         ;
-; USER_IO_94                                                                                           ;                   ;         ;
-; USER_IO_112                                                                                          ;                   ;         ;
-; USER_IO_135                                                                                          ;                   ;         ;
+; USER_IO_80                                                                                           ;                   ;         ;
+; USER_IO_81                                                                                           ;                   ;         ;
 ; USER_IO_137                                                                                          ;                   ;         ;
 ; USER_IO_139                                                                                          ;                   ;         ;
 ; USER_IO_141                                                                                          ;                   ;         ;
-; CLK_50MHZ                                                                                            ;                   ;         ;
 ; nRESET                                                                                               ;                   ;         ;
 ;      - BRD_STATUS_LED_WORD[0]                                                                        ; 1                 ; 6       ;
 ;      - UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX               ; 1                 ; 6       ;
@@ -936,19 +931,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_4                           ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_2                           ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_1                           ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[1]                                         ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[2]                                         ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[3]                                         ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[4]                                         ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[5]                                         ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[6]                                         ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[0]                                         ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[7]                                         ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[0]                                            ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[1]                                            ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[2]                                            ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[3]                                            ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[4]                                            ; 1                 ; 6       ;
 ;      - UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~0   ; 1                 ; 6       ;
 ;      - UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~0   ; 1                 ; 6       ;
 ;      - UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~0   ; 1                 ; 6       ;
@@ -1064,19 +1046,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DISC_OUT_AR_LEVEL~10                                       ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DISC_OUT_AR_LEVEL~11                                       ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME~0                                        ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~17                                       ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME[3]~19                                    ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~20                                       ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~21                                       ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~23                                       ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~25                                       ; 1                 ; 6       ;
+;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~1                                        ; 1                 ; 6       ;
+;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME[3]~3                                     ; 1                 ; 6       ;
+;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~5                                        ; 1                 ; 6       ;
+;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~11                                       ; 1                 ; 6       ;
+;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~13                                       ; 1                 ; 6       ;
+;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~15                                       ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][1]~2                                  ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][0]~4                                  ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][3]~6                                  ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[3][2]~8                                  ; 1                 ; 6       ;
+;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[3]~24                                      ; 1                 ; 6       ;
+;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[3]~25                                      ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][7]~858                                ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][7]~859                                ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE~10                                           ; 1                 ; 6       ;
+;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[0]~7                                          ; 1                 ; 6       ;
+;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[0]~8                                          ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER~0                                           ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER~1                                           ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER~2                                           ; 1                 ; 6       ;
@@ -2294,20 +2280,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND~1288                                      ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND~1289                                      ; 1                 ; 6       ;
 ;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND~1290                                      ; 1                 ; 6       ;
-;      - UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~7   ; 1                 ; 6       ;
 ;      - UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~12      ; 1                 ; 6       ;
-;      - UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~7   ; 1                 ; 6       ;
+;      - UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~8   ; 1                 ; 6       ;
 ;      - UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~12      ; 1                 ; 6       ;
-;      - UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~7   ; 1                 ; 6       ;
 ;      - UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~12      ; 1                 ; 6       ;
-;      - UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~7   ; 1                 ; 6       ;
+;      - UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~8   ; 1                 ; 6       ;
 ;      - UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~12      ; 1                 ; 6       ;
-;      - UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~7       ; 1                 ; 6       ;
 ;      - UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~12          ; 1                 ; 6       ;
 ;      - UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~12    ; 1                 ; 6       ;
-;      - UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~7 ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~26                                       ; 1                 ; 6       ;
-;      - MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~27                                       ; 1                 ; 6       ;
+;      - nRESET_AR1                                                                                    ; 1                 ; 6       ;
+;      - nRESET_AR2                                                                                    ; 1                 ; 6       ;
+;      - nRESET_AR3                                                                                    ; 1                 ; 6       ;
+;      - nRESET_AR4                                                                                    ; 1                 ; 6       ;
+; CLK_50MHZ                                                                                            ;                   ;         ;
 ; DISC_IN_1_AR1_D2                                                                                     ;                   ;         ;
 ;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_AR_EDGE~0                          ; 1                 ; 6       ;
 ;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_1|DISC_IN_1_AR_D2_FF~0                       ; 1                 ; 6       ;
@@ -2321,8 +2306,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE~0                          ; 0                 ; 6       ;
 ;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_1_AR_D2_FF~0                       ; 0                 ; 6       ;
 ; DISC_IN_2_AR2_D4                                                                                     ;                   ;         ;
-;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE~1                          ; 0                 ; 6       ;
-;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_2_AR_D4_FF~0                       ; 0                 ; 6       ;
 ; DISC_IN_3_AR2_D7                                                                                     ;                   ;         ;
 ;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_AR_EDGE~2                          ; 0                 ; 6       ;
 ;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_2|DISC_IN_3_AR_D7_FF~0                       ; 0                 ; 6       ;
@@ -2333,24 +2316,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_AR_EDGE~1                          ; 0                 ; 6       ;
 ;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_2_AR_D4_FF~0                       ; 0                 ; 6       ;
 ; DISC_IN_3_AR3_D7                                                                                     ;                   ;         ;
-;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_AR_EDGE~2                          ; 1                 ; 6       ;
-;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_3_AR_D7_FF~0                       ; 1                 ; 6       ;
+;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_AR_EDGE~2                          ; 0                 ; 6       ;
+;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_3|DISC_IN_3_AR_D7_FF~0                       ; 0                 ; 6       ;
 ; DISC_IN_1_AR4_D2                                                                                     ;                   ;         ;
 ;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4|DISC_IN_AR_EDGE~0                          ; 1                 ; 6       ;
 ;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4|DISC_IN_1_AR_D2_FF~0                       ; 1                 ; 6       ;
 ; DISC_IN_2_AR4_D4                                                                                     ;                   ;         ;
 ; DISC_IN_3_AR4_D7                                                                                     ;                   ;         ;
-;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4|DISC_IN_AR_EDGE~2                          ; 0                 ; 6       ;
-;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4|DISC_IN_3_AR_D7_FF~0                       ; 0                 ; 6       ;
+;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4|DISC_IN_AR_EDGE~2                          ; 1                 ; 6       ;
+;      - DISCRETE_COMM_ARDUINO:INST_DISCRETE_COMM_ARDUINO_4|DISC_IN_3_AR_D7_FF~0                       ; 1                 ; 6       ;
 ; DISC_IN_1_SH_D2                                                                                      ;                   ;         ;
 ;      - DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|DISC_IN_SH_EDGE~0                              ; 0                 ; 6       ;
 ;      - DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|DISC_IN_1_SH_D2_FF~0                           ; 0                 ; 6       ;
 ; DISC_IN_2_SH_D4                                                                                      ;                   ;         ;
-;      - DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|DISC_IN_SH_EDGE~1                              ; 0                 ; 6       ;
-;      - DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|DISC_IN_2_SH_D4_FF~0                           ; 0                 ; 6       ;
+;      - DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|DISC_IN_SH_EDGE~1                              ; 1                 ; 6       ;
+;      - DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|DISC_IN_2_SH_D4_FF~0                           ; 1                 ; 6       ;
 ; DISC_IN_3_SH_D7                                                                                      ;                   ;         ;
-;      - DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|DISC_IN_SH_EDGE~2                              ; 0                 ; 6       ;
-;      - DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|DISC_IN_3_SH_D7_FF~0                           ; 0                 ; 6       ;
+;      - DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|DISC_IN_SH_EDGE~2                              ; 1                 ; 6       ;
+;      - DISCRETE_COMM_SHIELD:INST_DISCRETE_COMM_SHIELD|DISC_IN_3_SH_D7_FF~0                           ; 1                 ; 6       ;
 ; UART_AR3_RX                                                                                          ;                   ;         ;
 ;      - UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_FF~0            ; 0                 ; 6       ;
 ;      - UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_FALL_EDGE~0     ; 0                 ; 6       ;
@@ -2371,17 +2354,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_FF~0          ; 0                 ; 6       ;
 ; PWM_2_AR4_D5                                                                                         ;                   ;         ;
 ; PWM_2_AR2_D5                                                                                         ;                   ;         ;
-;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_FF_1~0                            ; 1                 ; 6       ;
+;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_FF_1~0                            ; 0                 ; 6       ;
 ; PWM_1_AR4_D3                                                                                         ;                   ;         ;
 ;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_FF_1~1                            ; 1                 ; 6       ;
 ; PWM_3_AR2_D6                                                                                         ;                   ;         ;
-;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_FF_1~1                            ; 1                 ; 6       ;
+;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_FF_1~1                            ; 0                 ; 6       ;
 ; PWM_2_AR3_D5                                                                                         ;                   ;         ;
-;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_FF_1~0                            ; 1                 ; 6       ;
+;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_FF_1~0                            ; 0                 ; 6       ;
 ; PWM_2_AR1_D5                                                                                         ;                   ;         ;
 ;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_FF_1~0                            ; 0                 ; 6       ;
 ; PWM_1_AR3_D3                                                                                         ;                   ;         ;
-;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_FF_1~1                            ; 0                 ; 6       ;
+;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_FF_1~1                            ; 1                 ; 6       ;
 ; PWM_3_AR1_D6                                                                                         ;                   ;         ;
 ;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_FF_1~1                            ; 1                 ; 6       ;
 ; PWM_3_AR3_D6                                                                                         ;                   ;         ;
@@ -2398,7 +2381,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PWM_6_AR3_D11                                                                                        ;                   ;         ;
 ;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_FF_1~3                            ; 0                 ; 6       ;
 ; PWM_6_AR1_D11                                                                                        ;                   ;         ;
-;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_FF_1~3                            ; 0                 ; 6       ;
+;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_FF_1~3                            ; 1                 ; 6       ;
 ; PWM_5_AR3_D10                                                                                        ;                   ;         ;
 ;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_FF_1~4                            ; 0                 ; 6       ;
 ; PWM_4_AR4_D9                                                                                         ;                   ;         ;
@@ -2409,9 +2392,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PWM_4_AR3_D9                                                                                         ;                   ;         ;
 ;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_FF_1~5                            ; 0                 ; 6       ;
 ; PWM_4_AR1_D9                                                                                         ;                   ;         ;
-;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_FF_1~4                            ; 0                 ; 6       ;
+;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_FF_1~4                            ; 1                 ; 6       ;
 ; PWM_5_AR1_D10                                                                                        ;                   ;         ;
-;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_FF_1~5                            ; 0                 ; 6       ;
+;      - PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_FF_1~5                            ; 1                 ; 6       ;
 +------------------------------------------------------------------------------------------------------+-------------------+---------+
 
 
@@ -2420,129 +2403,131 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                                          ; Location           ; Fan-Out ; Usage                   ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
-; BRD_STATUS_LED_WORD[2]~3                                                                      ; LCCOMB_X25_Y1_N20  ; 5       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; BRD_STATUS_LED_WORD[2]~3                                                                      ; LCCOMB_X9_Y1_N26   ; 5       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
 ; CLK_50MHZ                                                                                     ; PIN_17             ; 2026    ; Clock                   ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal2~3                                                   ; LCCOMB_X13_Y9_N8   ; 9       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal3~1                                                   ; LCCOMB_X24_Y9_N24  ; 7       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][1]~2                                  ; LCCOMB_X24_Y10_N22 ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][0]~4                                  ; LCCOMB_X21_Y9_N12  ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][3]~6                                  ; LCCOMB_X21_Y11_N6  ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[3][2]~8                                  ; LCCOMB_X25_Y9_N20  ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[109][7]~893                               ; LCCOMB_X10_Y3_N10  ; 9       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][7]~858                                ; LCCOMB_X10_Y8_N22  ; 442     ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME~1                                        ; LCCOMB_X21_Y9_N18  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME[3]~19                                    ; LCCOMB_X24_Y10_N12 ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[0][4]~5                  ; LCCOMB_X3_Y3_N2    ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[1][6]~3                  ; LCCOMB_X22_Y7_N10  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[2][4]~2                  ; LCCOMB_X20_Y6_N28  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[3][1]~11                 ; LCCOMB_X9_Y4_N20   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[4][4]~10                 ; LCCOMB_X12_Y2_N22  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[5][1]~7                  ; LCCOMB_X5_Y2_N0    ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[0][5]~2                  ; LCCOMB_X4_Y3_N14   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[1][0]~0                  ; LCCOMB_X21_Y7_N22  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[2][1]~1                  ; LCCOMB_X19_Y6_N28  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[3][5]~4                  ; LCCOMB_X12_Y4_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[4][2]~5                  ; LCCOMB_X13_Y2_N2   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[5][6]~3                  ; LCCOMB_X6_Y6_N14   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[0][0]~62                 ; LCCOMB_X3_Y3_N28   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[0][0]~65                 ; LCCOMB_X3_Y3_N26   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[1][0]~50                 ; LCCOMB_X22_Y7_N4   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[1][0]~53                 ; LCCOMB_X22_Y7_N2   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[2][7]~56                 ; LCCOMB_X20_Y6_N22  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[2][7]~59                 ; LCCOMB_X20_Y6_N20  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[3][0]~74                 ; LCCOMB_X9_Y4_N18   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[3][0]~77                 ; LCCOMB_X10_Y4_N30  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[4][4]~80                 ; LCCOMB_X12_Y2_N24  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[4][4]~83                 ; LCCOMB_X12_Y2_N30  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[5][5]~68                 ; LCCOMB_X5_Y2_N2    ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[5][5]~71                 ; LCCOMB_X5_Y6_N30   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|TIME_REF_1MS_COUNT[15]~17                ; LCCOMB_X25_Y4_N20  ; 15      ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[0][5]~5                  ; LCCOMB_X14_Y4_N2   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[1][0]~2                  ; LCCOMB_X25_Y8_N4   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[2][1]~3                  ; LCCOMB_X14_Y6_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[3][1]~9                  ; LCCOMB_X18_Y5_N20  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[4][4]~11                 ; LCCOMB_X15_Y1_N12  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[5][3]~7                  ; LCCOMB_X7_Y2_N6    ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[0][6]~2                  ; LCCOMB_X13_Y4_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[1][0]~0                  ; LCCOMB_X21_Y8_N12  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[2][1]~1                  ; LCCOMB_X15_Y6_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[3][0]~4                  ; LCCOMB_X19_Y5_N10  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[4][4]~5                  ; LCCOMB_X17_Y1_N16  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[5][3]~3                  ; LCCOMB_X6_Y2_N2    ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[0][3]~62                 ; LCCOMB_X14_Y4_N12  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[0][3]~65                 ; LCCOMB_X14_Y4_N10  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[1][6]~50                 ; LCCOMB_X25_Y8_N6   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[1][6]~53                 ; LCCOMB_X22_Y8_N24  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[2][5]~56                 ; LCCOMB_X15_Y6_N8   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[2][5]~59                 ; LCCOMB_X15_Y6_N30  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[3][6]~74                 ; LCCOMB_X20_Y5_N24  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[3][6]~77                 ; LCCOMB_X20_Y5_N22  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[4][4]~80                 ; LCCOMB_X17_Y1_N18  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[4][4]~83                 ; LCCOMB_X18_Y1_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[5][2]~68                 ; LCCOMB_X6_Y2_N28   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[5][2]~71                 ; LCCOMB_X6_Y2_N26   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[0][6]~4                  ; LCCOMB_X12_Y3_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[1][7]~1                  ; LCCOMB_X18_Y3_N2   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[2][1]~3                  ; LCCOMB_X18_Y7_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[3][3]~9                  ; LCCOMB_X19_Y8_N4   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[4][7]~10                 ; LCCOMB_X12_Y1_N12  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[5][4]~7                  ; LCCOMB_X7_Y5_N30   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[0][2]~2                  ; LCCOMB_X13_Y3_N2   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[1][6]~0                  ; LCCOMB_X17_Y3_N18  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[2][1]~6                  ; LCCOMB_X19_Y7_N10  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[3][3]~5                  ; LCCOMB_X18_Y8_N10  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[4][1]~4                  ; LCCOMB_X13_Y1_N28  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[5][4]~3                  ; LCCOMB_X6_Y5_N2    ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[0][7]~56                 ; LCCOMB_X12_Y3_N0   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[0][7]~59                 ; LCCOMB_X12_Y3_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[1][6]~50                 ; LCCOMB_X19_Y3_N0   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[1][6]~53                 ; LCCOMB_X19_Y3_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[2][3]~62                 ; LCCOMB_X19_Y7_N4   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[2][3]~65                 ; LCCOMB_X19_Y7_N2   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[3][3]~80                 ; LCCOMB_X17_Y8_N0   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[3][3]~83                 ; LCCOMB_X17_Y8_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[4][5]~74                 ; LCCOMB_X12_Y1_N6   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[4][5]~77                 ; LCCOMB_X12_Y1_N4   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[5][5]~68                 ; LCCOMB_X6_Y5_N4    ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[5][5]~71                 ; LCCOMB_X6_Y5_N10   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[0][2]~3                  ; LCCOMB_X24_Y5_N24  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[1][2]~2                  ; LCCOMB_X9_Y9_N2    ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[2][1]~11                 ; LCCOMB_X15_Y10_N10 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[3][6]~9                  ; LCCOMB_X8_Y11_N4   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[4][7]~7                  ; LCCOMB_X8_Y7_N12   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[5][5]~6                  ; LCCOMB_X8_Y10_N20  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[0][4]~1                  ; LCCOMB_X22_Y5_N0   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[1][3]~0                  ; LCCOMB_X10_Y9_N30  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[2][1]~5                  ; LCCOMB_X14_Y10_N14 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[3][3]~4                  ; LCCOMB_X8_Y11_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[4][7]~3                  ; LCCOMB_X7_Y7_N28   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[5][0]~2                  ; LCCOMB_X9_Y10_N28  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[0][2]~56                 ; LCCOMB_X22_Y5_N18  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[0][2]~59                 ; LCCOMB_X25_Y5_N28  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[1][5]~50                 ; LCCOMB_X9_Y9_N12   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[1][5]~53                 ; LCCOMB_X9_Y9_N10   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[2][0]~80                 ; LCCOMB_X15_Y10_N4  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[2][0]~83                 ; LCCOMB_X15_Y10_N2  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[3][6]~74                 ; LCCOMB_X7_Y11_N28  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[3][6]~77                 ; LCCOMB_X7_Y11_N2   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[4][7]~68                 ; LCCOMB_X7_Y7_N30   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[4][7]~71                 ; LCCOMB_X7_Y7_N4    ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[5][0]~62                 ; LCCOMB_X8_Y10_N22  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[5][0]~65                 ; LCCOMB_X8_Y10_N28  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~7   ; LCCOMB_X4_Y2_N14   ; 4       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[2]~1         ; LCCOMB_X24_Y7_N30  ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~7   ; LCCOMB_X26_Y3_N10  ; 4       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[1]~1         ; LCCOMB_X13_Y13_N22 ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~7   ; LCCOMB_X5_Y11_N4   ; 4       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[3]~1         ; LCCOMB_X21_Y11_N16 ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~7   ; LCCOMB_X21_Y6_N24  ; 4       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[6]~1         ; LCCOMB_X21_Y9_N16  ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~7 ; LCCOMB_X24_Y12_N4  ; 1       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED      ; LCFF_X22_Y12_N23   ; 435     ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[3]~1       ; LCCOMB_X14_Y13_N4  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~7       ; LCCOMB_X19_Y12_N6  ; 4       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; UART_SHIELD:INST_UART_SHIELD|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[3]~1             ; LCCOMB_X25_Y10_N2  ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; nRESET                                                                                        ; PIN_144            ; 1553    ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[3]~24                                      ; LCCOMB_X14_Y8_N24  ; 8       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[3]~25                                      ; LCCOMB_X14_Y8_N26  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[0]~7                                          ; LCCOMB_X8_Y9_N24   ; 5       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[0]~8                                          ; LCCOMB_X8_Y9_N26   ; 5       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][1]~2                                  ; LCCOMB_X8_Y8_N24   ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][0]~4                                  ; LCCOMB_X8_Y8_N12   ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][3]~6                                  ; LCCOMB_X8_Y8_N8    ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[3][2]~8                                  ; LCCOMB_X8_Y9_N30   ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[109][7]~893                               ; LCCOMB_X10_Y8_N10  ; 9       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][7]~858                                ; LCCOMB_X14_Y8_N12  ; 442     ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_OUT_FRAME~1                                        ; LCCOMB_X8_Y8_N16   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME[3]~3                                     ; LCCOMB_X7_Y10_N30  ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[0][4]~5                  ; LCCOMB_X8_Y6_N4    ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[1][6]~3                  ; LCCOMB_X21_Y7_N16  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[2][4]~2                  ; LCCOMB_X20_Y8_N4   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[3][1]~11                 ; LCCOMB_X27_Y7_N30  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[4][4]~10                 ; LCCOMB_X15_Y12_N28 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_HI[5][1]~7                  ; LCCOMB_X14_Y11_N30 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[0][5]~2                  ; LCCOMB_X9_Y6_N4    ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[1][0]~0                  ; LCCOMB_X21_Y7_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[2][1]~1                  ; LCCOMB_X19_Y8_N4   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[3][5]~4                  ; LCCOMB_X26_Y7_N18  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[4][2]~5                  ; LCCOMB_X14_Y12_N4  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_AR_PULSE_LO[5][6]~3                  ; LCCOMB_X15_Y11_N10 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[0][0]~62                 ; LCCOMB_X8_Y6_N6    ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[0][0]~65                 ; LCCOMB_X8_Y6_N28   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[1][0]~50                 ; LCCOMB_X21_Y7_N18  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[1][0]~53                 ; LCCOMB_X22_Y7_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[2][7]~56                 ; LCCOMB_X20_Y8_N30  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[2][7]~59                 ; LCCOMB_X20_Y8_N12  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[3][0]~74                 ; LCCOMB_X27_Y7_N16  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[3][0]~77                 ; LCCOMB_X27_Y7_N22  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[4][4]~80                 ; LCCOMB_X14_Y12_N30 ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[4][4]~83                 ; LCCOMB_X14_Y12_N12 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[5][5]~68                 ; LCCOMB_X14_Y11_N0  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|PWM_PULSE_COUNT[5][5]~71                 ; LCCOMB_X14_Y11_N6  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|TIME_REF_1MS_COUNT[15]~17                ; LCCOMB_X25_Y1_N26  ; 15      ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[0][5]~5                  ; LCCOMB_X9_Y7_N30   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[1][0]~2                  ; LCCOMB_X20_Y2_N20  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[2][1]~3                  ; LCCOMB_X18_Y10_N2  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[3][1]~9                  ; LCCOMB_X20_Y12_N30 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[4][4]~11                 ; LCCOMB_X18_Y1_N26  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_HI[5][3]~7                  ; LCCOMB_X25_Y10_N30 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[0][6]~2                  ; LCCOMB_X10_Y7_N2   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[1][0]~0                  ; LCCOMB_X21_Y2_N20  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[2][1]~1                  ; LCCOMB_X19_Y10_N14 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[3][0]~4                  ; LCCOMB_X21_Y12_N2  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[4][4]~5                  ; LCCOMB_X19_Y1_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[5][3]~3                  ; LCCOMB_X24_Y10_N2  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[0][3]~62                 ; LCCOMB_X9_Y7_N0    ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[0][3]~65                 ; LCCOMB_X9_Y7_N6    ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[1][6]~50                 ; LCCOMB_X20_Y2_N22  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[1][6]~53                 ; LCCOMB_X20_Y2_N28  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[2][5]~56                 ; LCCOMB_X18_Y10_N28 ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[2][5]~59                 ; LCCOMB_X18_Y10_N26 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[3][6]~74                 ; LCCOMB_X20_Y12_N8  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[3][6]~77                 ; LCCOMB_X20_Y12_N6  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[4][4]~80                 ; LCCOMB_X19_Y1_N0   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[4][4]~83                 ; LCCOMB_X19_Y1_N30  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[5][2]~68                 ; LCCOMB_X25_Y10_N24 ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_PULSE_COUNT[5][2]~71                 ; LCCOMB_X25_Y10_N22 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[0][6]~4                  ; LCCOMB_X14_Y4_N18  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[1][7]~1                  ; LCCOMB_X18_Y2_N2   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[2][1]~3                  ; LCCOMB_X15_Y5_N26  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[3][3]~9                  ; LCCOMB_X17_Y5_N4   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[4][7]~10                 ; LCCOMB_X26_Y9_N28  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_HI[5][4]~7                  ; LCCOMB_X22_Y10_N10 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[0][2]~2                  ; LCCOMB_X15_Y4_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[1][6]~0                  ; LCCOMB_X19_Y2_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[2][1]~6                  ; LCCOMB_X14_Y5_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[3][3]~5                  ; LCCOMB_X18_Y5_N4   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[4][1]~4                  ; LCCOMB_X25_Y9_N12  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_AR_PULSE_LO[5][4]~3                  ; LCCOMB_X21_Y10_N14 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[0][7]~56                 ; LCCOMB_X14_Y4_N28  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[0][7]~59                 ; LCCOMB_X14_Y4_N26  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[1][6]~50                 ; LCCOMB_X18_Y2_N28  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[1][6]~53                 ; LCCOMB_X18_Y2_N10  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[2][3]~62                 ; LCCOMB_X14_Y5_N8   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[2][3]~65                 ; LCCOMB_X14_Y5_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[3][3]~80                 ; LCCOMB_X17_Y5_N30  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[3][3]~83                 ; LCCOMB_X17_Y5_N28  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[4][5]~74                 ; LCCOMB_X26_Y9_N30  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[4][5]~77                 ; LCCOMB_X26_Y9_N20  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[5][5]~68                 ; LCCOMB_X22_Y10_N4  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_3|PWM_PULSE_COUNT[5][5]~71                 ; LCCOMB_X22_Y10_N2  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[0][2]~3                  ; LCCOMB_X24_Y3_N26  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[1][2]~2                  ; LCCOMB_X22_Y1_N10  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[2][1]~11                 ; LCCOMB_X19_Y13_N10 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[3][6]~9                  ; LCCOMB_X18_Y9_N30  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[4][7]~7                  ; LCCOMB_X15_Y3_N0   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_HI[5][5]~6                  ; LCCOMB_X22_Y3_N4   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[0][4]~1                  ; LCCOMB_X25_Y3_N30  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[1][3]~0                  ; LCCOMB_X21_Y1_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[2][1]~5                  ; LCCOMB_X18_Y13_N22 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[3][3]~4                  ; LCCOMB_X19_Y9_N22  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[4][7]~3                  ; LCCOMB_X25_Y6_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[5][0]~2                  ; LCCOMB_X21_Y3_N26  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[0][2]~56                 ; LCCOMB_X25_Y3_N0   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[0][2]~59                 ; LCCOMB_X25_Y3_N6   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[1][5]~50                 ; LCCOMB_X22_Y1_N28  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[1][5]~53                 ; LCCOMB_X22_Y1_N2   ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[2][0]~80                 ; LCCOMB_X19_Y13_N4  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[2][0]~83                 ; LCCOMB_X19_Y13_N2  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[3][6]~74                 ; LCCOMB_X18_Y9_N24  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[3][6]~77                 ; LCCOMB_X17_Y9_N30  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[4][7]~68                 ; LCCOMB_X15_Y3_N18  ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[4][7]~71                 ; LCCOMB_X26_Y6_N30  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[5][0]~62                 ; LCCOMB_X20_Y3_N8   ; 9       ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_PULSE_COUNT[5][0]~65                 ; LCCOMB_X20_Y3_N14  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~8   ; LCCOMB_X7_Y4_N20   ; 1       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[2]~1         ; LCCOMB_X7_Y8_N0    ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~8   ; LCCOMB_X5_Y6_N4    ; 1       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[1]~1         ; LCCOMB_X6_Y5_N2    ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~3   ; LCCOMB_X12_Y1_N26  ; 4       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[3]~1         ; LCCOMB_X4_Y5_N22   ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~3   ; LCCOMB_X9_Y11_N10  ; 4       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[6]~1         ; LCCOMB_X8_Y12_N20  ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~1 ; LCCOMB_X6_Y1_N28   ; 4       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED      ; LCFF_X7_Y1_N15     ; 435     ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[3]~1       ; LCCOMB_X10_Y12_N20 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~3       ; LCCOMB_X9_Y3_N20   ; 4       ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; UART_SHIELD:INST_UART_SHIELD|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[3]~1             ; LCCOMB_X7_Y10_N0   ; 7       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; nRESET                                                                                        ; PIN_144            ; 1542    ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
 +-----------------------------------------------------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -2560,7 +2545,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                           ; Fan-Out ;
 +------------------------------------------------------------------------------------------------+---------+
-; nRESET                                                                                         ; 1553    ;
+; nRESET                                                                                         ; 1542    ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[16][7]~858                                 ; 442     ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|SHIELD_STATUS_UPDATED~0                                     ; 435     ;
 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED       ; 435     ;
@@ -2574,28 +2559,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|TIME_REF_1MS                              ; 24      ;
 ; Equal0~6                                                                                       ; 24      ;
 ; Equal0~4                                                                                       ; 24      ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[146][0]                                    ; 22      ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[146][0]                                    ; 23      ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal1~3                                                    ; 21      ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_TX_ACTIVE                                                ; 20      ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.IDLE                                             ; 19      ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[0]                                          ; 19      ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.IDLE                                             ; 17      ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[4]                                             ; 16      ;
 ; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_1|TIME_REF_1MS_COUNT[15]~17                 ; 15      ;
 ; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]          ; 15      ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]      ; 15      ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]      ; 15      ;
 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]      ; 15      ;
 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]      ; 15      ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[4]                                             ; 15      ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[3]                                             ; 15      ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal0~3                                                    ; 14      ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[5][0]                                      ; 14      ;
-; ~GND                                                                                           ; 13      ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[2]                                             ; 13      ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[7][2]                                      ; 14      ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[2]                                             ; 14      ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[1]                                             ; 14      ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[0]                                             ; 13      ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[7]                                          ; 13      ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[12][0]                                     ; 12      ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_MSG2SEND[146][5]                                    ; 12      ;
 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[0]    ; 12      ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[1]                                             ; 12      ;
 ; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]          ; 11      ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]      ; 11      ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]      ; 11      ;
@@ -2643,8 +2627,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_FF               ; 9       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_FF               ; 9       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_FF               ; 9       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal2~3                                                    ; 9       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED         ; 9       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE.IDLE                                          ; 9       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]      ; 9       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]      ; 9       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]      ; 9       ;
@@ -2730,6 +2714,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[0][4]~1                   ; 8       ;
 ; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_2|PWM_AR_PULSE_LO[1][0]~0                   ; 8       ;
 ; PWM_MONITORING_ARDUINO:INST_PWM_MONITORING_ARDUINO_4|PWM_AR_PULSE_LO[1][3]~0                   ; 8       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[3]~25                                       ; 8       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|BT_DATA_COUNTER[3]~24                                       ; 8       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[8]~2     ; 8       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[2]~2     ; 8       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[1]~2     ; 8       ;
@@ -2744,9 +2730,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][3]~6                                   ; 7       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[1][0]~4                                   ; 7       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[0][1]~2                                   ; 7       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal3~1                                                    ; 7       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME[3]~19                                     ; 7       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE.IDLE                                          ; 7       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME[3]~3                                      ; 7       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[6]~1          ; 7       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[3]~1          ; 7       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|FRAME2SEND[1]~1          ; 7       ;
@@ -2759,6 +2743,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; UART_SHIELD:INST_UART_SHIELD|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]          ; 7       ;
 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[2]    ; 7       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_3                            ; 7       ;
+; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~2      ; 6       ;
+; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~2            ; 6       ;
+; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~2        ; 6       ;
+; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~2        ; 6       ;
 ; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]          ; 6       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]      ; 6       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]      ; 6       ;
@@ -2775,28 +2763,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE           ; 6       ;
 ; UART_SHIELD:INST_UART_SHIELD|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE               ; 6       ;
 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_TX_ACTIVE         ; 6       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~27                                        ; 5       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~26                                        ; 5       ;
-; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~2      ; 5       ;
-; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~2            ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~2        ; 5       ;
-; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~2        ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~2        ; 5       ;
-; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT~2        ; 5       ;
 ; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]          ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]      ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]      ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]      ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[3]      ; 5       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~25                                        ; 5       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~23                                        ; 5       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~21                                        ; 5       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~20                                        ; 5       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~17                                        ; 5       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[0]~8                                           ; 5       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|DATA_COUNTER[0]~7                                           ; 5       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~15                                        ; 5       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~13                                        ; 5       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~11                                        ; 5       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~10                                        ; 5       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~9                                         ; 5       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~8                                         ; 5       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~1                                         ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_IN_RECEIVED         ; 5       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal2~2                                                    ; 5       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal2~1                                                    ; 5       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal2~0                                                    ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]~4    ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]~4    ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]~4    ; 5       ;
@@ -2810,18 +2795,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; UART_SHIELD:INST_UART_SHIELD|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]          ; 5       ;
 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]    ; 5       ;
 ; BRD_STATUS_LED_WORD[2]~3                                                                       ; 5       ;
-; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE         ; 5       ;
-; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE               ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE           ; 5       ;
-; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE           ; 5       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE           ; 5       ;
-; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE           ; 5       ;
-; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~7        ; 4       ;
-; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~7    ; 4       ;
-; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~7    ; 4       ;
-; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~7    ; 4       ;
-; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~7    ; 4       ;
-; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~3  ; 4       ;
+; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~1  ; 4       ;
+; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~3        ; 4       ;
+; UART_ARDUINO:INST_UART_ARDUINO_2|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~5    ; 4       ;
+; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~3    ; 4       ;
+; UART_ARDUINO:INST_UART_ARDUINO_1|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[0]~5    ; 4       ;
+; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]~3    ; 4       ;
 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|BAUD_RATE_COUNT[8]     ; 4       ;
 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[2]    ; 4       ;
 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_FRAME_COUNT[1]    ; 4       ;
@@ -2834,13 +2815,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux0~40                                                     ; 4       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|ARDUINO_STATUS_UPDATED~3                                    ; 4       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE~10                                               ; 4       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal2~0                                                    ; 4       ;
 ; BRD_STATUS_LED_WORD~1                                                                          ; 4       ;
 ; BRD_STATUS_LED_COUNT[0]                                                                        ; 4       ;
+; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE         ; 4       ;
+; UART_SHIELD:INST_UART_SHIELD|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE               ; 4       ;
+; UART_ARDUINO:INST_UART_ARDUINO_4|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE           ; 4       ;
+; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|UART_RX_ACTIVE           ; 4       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_STATE.RESPONSE_TO_ARDUINO_4                            ; 4       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_SEND[2]                                         ; 4       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_SEND                                            ; 4       ;
 ; BRD_STATUS_LED_WORD[0]                                                                         ; 4       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux7~272                                                    ; 3       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux7~273                                                    ; 3       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[3]~8    ; 3       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]~8    ; 3       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_2|UART_TX_MACHINE:INST_UART_TX_MACHINE|UART_FRAME_COUNT[1]~8    ; 3       ;
@@ -2919,6 +2905,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; UART_ARDUINO:INST_UART_ARDUINO_3|UART_RX_MACHINE:INST_UART_RX_MACHINE|OUTPUT_REGISTER~0        ; 3       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Selector7~0                                                 ; 3       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_BT_STATE~8                                             ; 3       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~5                                         ; 3       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|LessThan0~0                                                 ; 3       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|DATA_TRANSMITTED_DET~0   ; 3       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|Equal1~2                 ; 3       ;
@@ -3470,8 +3457,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Selector10~0                                                ; 2       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Selector9~1                                                 ; 2       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_AR_OUT_FRAME[2][3]~5                                   ; 2       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux7~246                                                    ; 2       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|UART_SH_OUT_FRAME~4                                         ; 2       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux7~247                                                    ; 2       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux3~10                                                     ; 2       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Equal2~3                                                    ; 2       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux6~10                                                     ; 2       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux2~0                                                      ; 2       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux1~0                                                      ; 2       ;
@@ -3502,9 +3491,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[12]                                          ; 2       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[9]                                           ; 2       ;
 ; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|TRANSFER_TIMER[11]                                          ; 2       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux7~39                                                     ; 2       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux7~34                                                     ; 2       ;
-; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux5~0                                                      ; 2       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux7~40                                                     ; 2       ;
+; MAIN_PROCESSOR:INST_MAIN_PROCESSOR|Mux7~35                                                     ; 2       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|Equal1~1                 ; 2       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[7]       ; 2       ;
 ; UART_ARDUINO:INST_UART_ARDUINO_4|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[5]       ; 2       ;
@@ -3557,9 +3545,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; UART_SHIELD:INST_UART_SHIELD|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[2]           ; 2       ;
 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|Equal1~1               ; 2       ;
 ; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[7]     ; 2       ;
-; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[5]     ; 2       ;
-; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[4]     ; 2       ;
-; UART_BLUETOOTH:INST_UART_BLUETOOTH|UART_TX_MACHINE:INST_UART_TX_MACHINE|BAUD_RATE_COUNT[6]     ; 2       ;
 +------------------------------------------------------------------------------------------------+---------+
 
 
@@ -3568,153 +3553,153 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-------------------------+
 ; Other Routing Resource Type ; Usage                   ;
 +-----------------------------+-------------------------+
-; Block interconnects         ; 2,521 / 15,666 ( 16 % ) ;
-; C16 interconnects           ; 21 / 812 ( 3 % )        ;
-; C4 interconnects            ; 1,149 / 11,424 ( 10 % ) ;
-; Direct links                ; 650 / 15,666 ( 4 % )    ;
+; Block interconnects         ; 2,534 / 15,666 ( 16 % ) ;
+; C16 interconnects           ; 27 / 812 ( 3 % )        ;
+; C4 interconnects            ; 1,167 / 11,424 ( 10 % ) ;
+; Direct links                ; 680 / 15,666 ( 4 % )    ;
 ; Global clocks               ; 1 / 8 ( 13 % )          ;
 ; Local interconnects         ; 2,089 / 4,608 ( 45 % )  ;
-; R24 interconnects           ; 38 / 652 ( 6 % )        ;
-; R4 interconnects            ; 1,360 / 13,328 ( 10 % ) ;
+; R24 interconnects           ; 47 / 652 ( 7 % )        ;
+; R4 interconnects            ; 1,316 / 13,328 ( 10 % ) ;
 +-----------------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 13.57) ; Number of LABs  (Total = 224) ;
+; Number of Logic Elements  (Average = 13.59) ; Number of LABs  (Total = 224) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 9                             ;
+; 1                                           ; 10                            ;
 ; 2                                           ; 4                             ;
-; 3                                           ; 2                             ;
+; 3                                           ; 3                             ;
 ; 4                                           ; 1                             ;
 ; 5                                           ; 3                             ;
 ; 6                                           ; 1                             ;
-; 7                                           ; 4                             ;
-; 8                                           ; 1                             ;
+; 7                                           ; 0                             ;
+; 8                                           ; 4                             ;
 ; 9                                           ; 1                             ;
-; 10                                          ; 5                             ;
-; 11                                          ; 12                            ;
-; 12                                          ; 7                             ;
-; 13                                          ; 11                            ;
-; 14                                          ; 20                            ;
-; 15                                          ; 30                            ;
-; 16                                          ; 113                           ;
+; 10                                          ; 2                             ;
+; 11                                          ; 8                             ;
+; 12                                          ; 10                            ;
+; 13                                          ; 4                             ;
+; 14                                          ; 28                            ;
+; 15                                          ; 41                            ;
+; 16                                          ; 104                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 1.62) ; Number of LABs  (Total = 224) ;
+; LAB-wide Signals  (Average = 1.64) ; Number of LABs  (Total = 224) ;
 +------------------------------------+-------------------------------+
-; 1 Clock                            ; 219                           ;
-; 1 Clock enable                     ; 110                           ;
-; 1 Sync. clear                      ; 22                            ;
-; 1 Sync. load                       ; 10                            ;
-; 2 Clock enables                    ; 1                             ;
+; 1 Clock                            ; 222                           ;
+; 1 Clock enable                     ; 113                           ;
+; 1 Sync. clear                      ; 24                            ;
+; 1 Sync. load                       ; 7                             ;
+; 2 Clock enables                    ; 2                             ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 22.35) ; Number of LABs  (Total = 224) ;
+; Number of Signals Sourced  (Average = 22.34) ; Number of LABs  (Total = 224) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 1                             ;
-; 2                                            ; 9                             ;
+; 1                                            ; 0                             ;
+; 2                                            ; 10                            ;
 ; 3                                            ; 0                             ;
-; 4                                            ; 3                             ;
-; 5                                            ; 1                             ;
-; 6                                            ; 2                             ;
+; 4                                            ; 4                             ;
+; 5                                            ; 0                             ;
+; 6                                            ; 3                             ;
 ; 7                                            ; 0                             ;
-; 8                                            ; 3                             ;
-; 9                                            ; 2                             ;
-; 10                                           ; 2                             ;
-; 11                                           ; 2                             ;
-; 12                                           ; 1                             ;
+; 8                                            ; 4                             ;
+; 9                                            ; 0                             ;
+; 10                                           ; 0                             ;
+; 11                                           ; 0                             ;
+; 12                                           ; 2                             ;
 ; 13                                           ; 1                             ;
 ; 14                                           ; 0                             ;
-; 15                                           ; 5                             ;
-; 16                                           ; 4                             ;
-; 17                                           ; 7                             ;
-; 18                                           ; 7                             ;
-; 19                                           ; 9                             ;
-; 20                                           ; 3                             ;
-; 21                                           ; 6                             ;
-; 22                                           ; 18                            ;
-; 23                                           ; 15                            ;
-; 24                                           ; 8                             ;
-; 25                                           ; 17                            ;
-; 26                                           ; 8                             ;
+; 15                                           ; 1                             ;
+; 16                                           ; 7                             ;
+; 17                                           ; 6                             ;
+; 18                                           ; 9                             ;
+; 19                                           ; 5                             ;
+; 20                                           ; 8                             ;
+; 21                                           ; 9                             ;
+; 22                                           ; 19                            ;
+; 23                                           ; 17                            ;
+; 24                                           ; 9                             ;
+; 25                                           ; 16                            ;
+; 26                                           ; 12                            ;
 ; 27                                           ; 29                            ;
-; 28                                           ; 34                            ;
-; 29                                           ; 13                            ;
-; 30                                           ; 5                             ;
-; 31                                           ; 7                             ;
-; 32                                           ; 2                             ;
+; 28                                           ; 29                            ;
+; 29                                           ; 15                            ;
+; 30                                           ; 2                             ;
+; 31                                           ; 4                             ;
+; 32                                           ; 3                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 6.45) ; Number of LABs  (Total = 224) ;
+; Number of Signals Sourced Out  (Average = 6.48) ; Number of LABs  (Total = 224) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 0                             ;
-; 1                                               ; 22                            ;
-; 2                                               ; 41                            ;
-; 3                                               ; 20                            ;
-; 4                                               ; 9                             ;
-; 5                                               ; 11                            ;
-; 6                                               ; 22                            ;
-; 7                                               ; 13                            ;
-; 8                                               ; 14                            ;
-; 9                                               ; 11                            ;
-; 10                                              ; 15                            ;
-; 11                                              ; 5                             ;
+; 1                                               ; 26                            ;
+; 2                                               ; 36                            ;
+; 3                                               ; 18                            ;
+; 4                                               ; 12                            ;
+; 5                                               ; 7                             ;
+; 6                                               ; 25                            ;
+; 7                                               ; 16                            ;
+; 8                                               ; 13                            ;
+; 9                                               ; 8                             ;
+; 10                                              ; 13                            ;
+; 11                                              ; 7                             ;
 ; 12                                              ; 11                            ;
-; 13                                              ; 12                            ;
+; 13                                              ; 16                            ;
 ; 14                                              ; 8                             ;
-; 15                                              ; 10                            ;
+; 15                                              ; 8                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 11.08) ; Number of LABs  (Total = 224) ;
+; Number of Distinct Inputs  (Average = 11.14) ; Number of LABs  (Total = 224) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
 ; 2                                            ; 0                             ;
-; 3                                            ; 10                            ;
-; 4                                            ; 3                             ;
-; 5                                            ; 35                            ;
-; 6                                            ; 11                            ;
-; 7                                            ; 10                            ;
-; 8                                            ; 10                            ;
-; 9                                            ; 13                            ;
-; 10                                           ; 10                            ;
-; 11                                           ; 13                            ;
+; 3                                            ; 11                            ;
+; 4                                            ; 4                             ;
+; 5                                            ; 32                            ;
+; 6                                            ; 14                            ;
+; 7                                            ; 14                            ;
+; 8                                            ; 4                             ;
+; 9                                            ; 7                             ;
+; 10                                           ; 12                            ;
+; 11                                           ; 18                            ;
 ; 12                                           ; 27                            ;
 ; 13                                           ; 7                             ;
-; 14                                           ; 14                            ;
-; 15                                           ; 20                            ;
-; 16                                           ; 16                            ;
-; 17                                           ; 7                             ;
-; 18                                           ; 5                             ;
-; 19                                           ; 4                             ;
-; 20                                           ; 1                             ;
-; 21                                           ; 2                             ;
+; 14                                           ; 18                            ;
+; 15                                           ; 15                            ;
+; 16                                           ; 12                            ;
+; 17                                           ; 6                             ;
+; 18                                           ; 7                             ;
+; 19                                           ; 6                             ;
+; 20                                           ; 2                             ;
+; 21                                           ; 0                             ;
 ; 22                                           ; 0                             ;
-; 23                                           ; 0                             ;
+; 23                                           ; 1                             ;
 ; 24                                           ; 0                             ;
 ; 25                                           ; 0                             ;
-; 26                                           ; 0                             ;
-; 27                                           ; 1                             ;
-; 28                                           ; 1                             ;
+; 26                                           ; 1                             ;
+; 27                                           ; 0                             ;
+; 28                                           ; 2                             ;
 ; 29                                           ; 1                             ;
 ; 30                                           ; 2                             ;
 ; 31                                           ; 1                             ;
@@ -3778,7 +3763,7 @@ Info (176353): Automatically promoted node CLK_50MHZ (placed in PIN 17 (CLK0, LV
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
 Info (170191): Fitter placement operations beginning
@@ -3786,14 +3771,18 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 10% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 10% of the available device resources in the region that extends from location X0_Y0 to location X13_Y14
+    Info (170196): Router estimated peak interconnect usage is 13% of the available device resources in the region that extends from location X14_Y0 to location X28_Y14
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 1.11 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.17 seconds.
 Info (306004): Started post-fitting delay annotation
-Warning (306006): Found 30 output pins without output pin load capacitance assignment
+Warning (306006): Found 34 output pins without output pin load capacitance assignment
+    Info (306007): Pin "nRESET_AR1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "nRESET_AR2" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "nRESET_AR3" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "nRESET_AR4" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info (306007): Pin "LED_2" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info (306007): Pin "LED_4" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info (306007): Pin "LED_5" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -3829,17 +3818,17 @@ Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/output_files/FPGA_MAIN_MODULE.fit.smsg
+Info (144001): Generated suppressed messages file J:/Dropbox/Doctorado/FPGA/Firmware_v2/FPGA_MAIN_MODULE/output_files/FPGA_MAIN_MODULE.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 636 megabytes
-    Info: Processing ended: Sun Aug 20 23:10:45 2017
-    Info: Elapsed time: 00:00:13
+    Info: Processing ended: Mon Sep 18 21:54:33 2017
+    Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:11
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in J:/Dropbox/Doctorado/FPGA/FPGA_MAIN_MODULE/output_files/FPGA_MAIN_MODULE.fit.smsg.
+The suppressed messages can be found in J:/Dropbox/Doctorado/FPGA/Firmware_v2/FPGA_MAIN_MODULE/output_files/FPGA_MAIN_MODULE.fit.smsg.
 
 

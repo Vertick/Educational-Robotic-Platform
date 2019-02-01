@@ -7,7 +7,7 @@
 -- UART_SHIELD; DISCRETE_COMM_SHIELD; UART_ARDUINO; PWM_MONITORING_ARDUINO; DISCRETE_COMM_ARDUINO;--
 -- UART_RX_MACHINE; UART_TX_MACHINE.                                                              --
 ----------------------------------------------------------------------------------------------------
--- Initial version 1 - 20/08/2017                                                                 --
+-- Initial version 1 - 18/09/2017                                                                 --
 ----------------------------------------------------------------------------------------------------
 
 library ieee;
@@ -20,6 +20,10 @@ entity FPGA_MAIN_MODULE is
     -- Clock and Reset signals
     CLK_50MHZ          : in  std_logic; -- 50 MHz clock
     nRESET             : in  std_logic; -- Asynchronous reset (Active LOW)
+    nRESET_AR1         : out std_logic; -- Asynchronous reset (Active LOW) for Arduino Nano 1
+    nRESET_AR2         : out std_logic; -- Asynchronous reset (Active LOW) for Arduino Nano 2
+    nRESET_AR3         : out std_logic; -- Asynchronous reset (Active LOW) for Arduino Nano 3
+    nRESET_AR4         : out std_logic; -- Asynchronous reset (Active LOW) for Arduino Nano 4
     -- FPGA Status LED Ports
     LED_2              : out std_logic; -- Board LED_2
     LED_4              : out std_logic; -- Board LED_4
@@ -103,15 +107,11 @@ entity FPGA_MAIN_MODULE is
     DISC_OUT_2_AR4_D12 : out std_logic; -- Arduino Nano digital port D8. Discrete Ouput 1.
     DISC_OUT_3_AR4_D13 : out std_logic; -- Arduino Nano digital port D8. Discrete Ouput 1.
     -- Not used ports
-    USER_IO_31         : in  std_logic;
-    USER_IO_40         : in  std_logic;
-    USER_IO_88         : in  std_logic;
-    USER_IO_94         : in  std_logic;
-    USER_IO_112        : in  std_logic;
-    USER_IO_135        : in  std_logic;
-    USER_IO_137        : in  std_logic;
-    USER_IO_139        : in  std_logic;
-    USER_IO_141        : in  std_logic);
+    USER_IO_80         : in  std_logic;  -- Not used pin (BOARD GND)
+    USER_IO_81         : in  std_logic;  -- Not used pin (BOARD 1V2)
+    USER_IO_137        : in  std_logic;  -- Not used pin
+    USER_IO_139        : in  std_logic;  -- Not used pin
+    USER_IO_141        : in  std_logic); -- Not used pin
 end FPGA_MAIN_MODULE;
 
 architecture TOP of FPGA_MAIN_MODULE is
@@ -566,6 +566,11 @@ architecture TOP of FPGA_MAIN_MODULE is
     ----------------------------------------------------------------------------------------------------
     -- LOCAL RTL/FUNCTIONS AND PROCEDURES                                                             --
     ----------------------------------------------------------------------------------------------------
+
+  nRESET_AR1 <= nRESET;
+  nRESET_AR2 <= nRESET;
+  nRESET_AR3 <= nRESET;
+  nRESET_AR4 <= nRESET;
 
   PWM_AR_PULSE_HI_LOAD: for I in 0 to PWM_AR_PORTS-1 generate
     PWM_AR_PULSE_HI(4*I) <= PWM_AR_PULSE_HI_1(I);

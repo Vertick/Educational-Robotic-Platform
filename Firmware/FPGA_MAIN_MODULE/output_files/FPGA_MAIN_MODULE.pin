@@ -94,7 +94,7 @@ PWM_4_AR4_D9                 : 27        : input  : 3.3-V LVTTL       :         
 DISC_OUT_2_AR4_D12           : 28        : output : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 29        : power  :                   : 3.3V    : 1         :                
 PWM_6_AR4_D11                : 30        : input  : 3.3-V LVTTL       :         : 1         : Y              
-USER_IO_31                   : 31        : input  : 3.3-V LVTTL       :         : 1         : Y              
+nRESET_AR1                   : 31        : output : 3.3-V LVTTL       :         : 1         : Y              
 DISC_OUT_3_AR4_D13           : 32        : output : 3.3-V LVTTL       :         : 1         : Y              
 GND                          : 33        : gnd    :                   :         :           :                
 GND_PLL1                     : 34        : gnd    :                   :         :           :                
@@ -103,7 +103,7 @@ GND_PLL1                     : 36        : gnd    :                   :         
 VCCA_PLL1                    : 37        : power  :                   : 1.2V    :           :                
 GNDA_PLL1                    : 38        : gnd    :                   :         :           :                
 GND                          : 39        : gnd    :                   :         :           :                
-USER_IO_40                   : 40        : input  : 3.3-V LVTTL       :         : 4         : Y              
+DISC_IN_1_AR2_D2             : 40        : input  : 3.3-V LVTTL       :         : 4         : Y              
 UART_AR1_TX                  : 41        : output : 3.3-V LVTTL       :         : 4         : Y              
 UART_AR1_RX                  : 42        : input  : 3.3-V LVTTL       :         : 4         : Y              
 DISC_IN_1_AR1_D2             : 43        : input  : 3.3-V LVTTL       :         : 4         : Y              
@@ -123,7 +123,7 @@ GND                          : 56        : gnd    :                   :         
 PWM_6_AR1_D11                : 57        : input  : 3.3-V LVTTL       :         : 4         : Y              
 DISC_OUT_2_AR1_D12           : 58        : output : 3.3-V LVTTL       :         : 4         : Y              
 DISC_OUT_3_AR1_D13           : 59        : output : 3.3-V LVTTL       :         : 4         : Y              
-DISC_IN_1_AR2_D2             : 60        : input  : 3.3-V LVTTL       :         : 4         : Y              
+nRESET_AR2                   : 60        : output : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 61        : gnd    :                   :         :           :                
 VCCINT                       : 62        : power  :                   : 1.2V    :           :                
 UART_SH_TX                   : 63        : output : 3.3-V LVTTL       :         : 4         : Y              
@@ -143,21 +143,21 @@ UART_AR2_RX                  : 75        : input  : 3.3-V LVTTL       :         
 VCCIO3                       : 77        : power  :                   : 3.3V    : 3         :                
 GND                          : 78        : gnd    :                   :         :           :                
 PWM_1_AR2_D3                 : 79        : input  : 3.3-V LVTTL       :         : 3         : Y              
-DISC_IN_2_AR2_D4             : 80        : input  : 3.3-V LVTTL       :         : 3         : Y              
-PWM_2_AR2_D5                 : 81        : input  : 3.3-V LVTTL       :         : 3         : Y              
+USER_IO_80                   : 80        : input  : 3.3-V LVTTL       :         : 3         : Y              
+USER_IO_81                   : 81        : input  : 3.3-V LVTTL       :         : 3         : Y              
 nSTATUS                      : 82        :        :                   :         : 3         :                
 CONF_DONE                    : 83        :        :                   :         : 3         :                
 MSEL1                        : 84        :        :                   :         : 3         :                
 MSEL0                        : 85        :        :                   :         : 3         :                
 PWM_3_AR2_D6                 : 86        : input  : 3.3-V LVTTL       :         : 3         : Y              
 DISC_IN_3_AR2_D7             : 87        : input  : 3.3-V LVTTL       :         : 3         : Y              
-USER_IO_88                   : 88        : input  : 3.3-V LVTTL       :         : 3         : Y              
+DISC_IN_2_AR2_D4             : 88        : input  : 3.3-V LVTTL       :         : 3         : Y              
 PWM_4_AR2_D9                 : 89        : input  : 3.3-V LVTTL       :         : 3         : Y              
 PWM_5_AR2_D10                : 90        : input  : 3.3-V LVTTL       :         : 3         : Y              
 PWM_6_AR2_D11                : 91        : input  : 3.3-V LVTTL       :         : 3         : Y              
 DISC_OUT_2_AR2_D12           : 92        : output : 3.3-V LVTTL       :         : 3         : Y              
 DISC_OUT_3_AR2_D13           : 93        : output : 3.3-V LVTTL       :         : 3         : Y              
-USER_IO_94                   : 94        : input  : 3.3-V LVTTL       :         : 3         : Y              
+nRESET_AR3                   : 94        : output : 3.3-V LVTTL       :         : 3         : Y              
 VCCIO3                       : 95        : power  :                   : 3.3V    : 3         :                
 DISC_OUT_1_SH_D8             : 96        : output : 3.3-V LVTTL       :         : 3         : Y              
 PWM_4_SH_D9                  : 97        : output : 3.3-V LVTTL       :         : 3         : Y              
@@ -175,7 +175,7 @@ GND_PLL2                     : 108       : gnd    :                   :         
 VCCA_PLL2                    : 109       : power  :                   : 1.2V    :           :                
 GNDA_PLL2                    : 110       : gnd    :                   :         :           :                
 GND                          : 111       : gnd    :                   :         :           :                
-USER_IO_112                  : 112       : input  : 3.3-V LVTTL       :         : 2         : Y              
+PWM_2_AR2_D5                 : 112       : input  : 3.3-V LVTTL       :         : 2         : Y              
 UART_AR3_TX                  : 113       : output : 3.3-V LVTTL       :         : 2         : Y              
 UART_AR3_RX                  : 114       : input  : 3.3-V LVTTL       :         : 2         : Y              
 DISC_IN_1_AR3_D2             : 115       : input  : 3.3-V LVTTL       :         : 2         : Y              
@@ -198,7 +198,7 @@ VCCINT                       : 131       : power  :                   : 1.2V    
 PWM_6_AR3_D11                : 132       : input  : 3.3-V LVTTL       :         : 2         : Y              
 DISC_OUT_2_AR3_D12           : 133       : output : 3.3-V LVTTL       :         : 2         : Y              
 DISC_OUT_3_AR3_D13           : 134       : output : 3.3-V LVTTL       :         : 2         : Y              
-USER_IO_135                  : 135       : input  : 3.3-V LVTTL       :         : 2         : Y              
+nRESET_AR4                   : 135       : output : 3.3-V LVTTL       :         : 2         : Y              
 DISC_OUT_3_SH_D13            : 136       : output : 3.3-V LVTTL       :         : 2         : Y              
 USER_IO_137                  : 137       : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 138       : power  :                   : 3.3V    : 2         :                
